@@ -31,7 +31,7 @@ function WieZijnWij() {
             <Link to="/" className="hover:text-white transition-colors">Home</Link> / Over ons
           </span>
           <h1 className="text-4xl md:text-5xl font-black font-raleway text-white mb-4">Wie zijn wij?</h1>
-          <p className="text-slate-300 max-w-lg">Maak kennis met MK CoreLink Group — uw partner in transport, IT-infrastructuur en beveiliging.</p>
+          <p className="text-slate-300 max-w-lg">Maak kennis met MK Solidum Group — uw partner in transport, IT-infrastructuur en beveiliging.</p>
         </div>
       </section>
 
@@ -45,13 +45,13 @@ function WieZijnWij() {
                 Drie divisies, één betrouwbare partner
               </h2>
               <p className="text-slate-500 leading-relaxed mb-4">
-                MK CoreLink Group B.V. is opgericht in 2016 en gevestigd in Bilthoven. Wat begon als een koeriersdienst is uitgegroeid tot een multidisciplinaire groep met drie gespecialiseerde divisies.
+                MK Solidum Group B.V. is opgericht in 2016 en gevestigd in Bilthoven. Wat begon als een koeriersdienst is uitgegroeid tot een multidisciplinaire groep met drie gespecialiseerde divisies.
               </p>
               <p className="text-slate-500 leading-relaxed mb-4">
                 <strong className="text-slate-700">MK Transport</strong> verzorgt medische koeriers- en logistieke diensten door heel Nederland. <strong className="text-slate-700">MK Infra</strong> is gespecialiseerd in internet bekabeling, patchkasten en netwerk aanleg. <strong className="text-slate-700">MK Security</strong> levert professionele camerasystemen en pandbeveiliging.
               </p>
               <p className="text-slate-500 leading-relaxed mb-8">
-                Bij MK CoreLink Group staat de klant centraal. Wij luisteren naar uw wensen en vertalen die naar concrete, passende oplossingen. Wij werken niet voor u, maar met u.
+                Bij MK Solidum Group staat de klant centraal. Wij luisteren naar uw wensen en vertalen die naar concrete, passende oplossingen. Wij werken niet voor u, maar met u.
               </p>
               <div className="flex gap-4">
                 <Link to="/contact" className="btn-primary">Contact opnemen &rarr;</Link>
@@ -63,7 +63,7 @@ function WieZijnWij() {
               <div className="rounded-2xl overflow-hidden shadow-xl h-96">
                 <img
                   src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=800&q=80"
-                  alt="MK CoreLink Group team aan het werk"
+                  alt="MK Solidum Group team aan het werk"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -130,9 +130,9 @@ function WieZijnWij() {
         <div className="container-main">
           <div className="text-center mb-14">
             <span className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3 block">Leiderschap</span>
-            <h2 className="text-3xl font-black font-raleway text-slate-900 mb-4">De oprichters achter MK CoreLink Group</h2>
+            <h2 className="text-3xl font-black font-raleway text-slate-900 mb-4">De oprichters achter MK Solidum Group</h2>
             <p className="text-slate-500 max-w-xl mx-auto">
-              MK CoreLink Group is opgericht door twee gedreven ondernemers die samen de expertise hebben om transport, infra én security onder één dak te bieden.
+              MK Solidum Group is opgericht door twee gedreven ondernemers die samen de expertise hebben om transport, infra én security onder één dak te bieden.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-10 mb-24">
@@ -245,7 +245,7 @@ function WieZijnWij() {
               <div className="space-y-3">
                 {[
                   { label: 'Telefoon', value: '06 148 909 15', href: 'tel:0614890915' },
-                  { label: 'E-mail', value: 'mkgroup@corelink.nl', href: 'mailto:mkgroup@corelink.nl' },
+                  { label: 'E-mail', value: 'mkgroup@mksolidumgroup.nl', href: 'mailto:mkgroup@mksolidumgroup.nl' },
                 ].map((c) => (
                   <a key={c.label} href={c.href} className="flex items-center gap-4 p-4 bg-white rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-card transition-all duration-200 group">
                     <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white shrink-0"

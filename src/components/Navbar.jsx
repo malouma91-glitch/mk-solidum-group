@@ -54,7 +54,7 @@ function Navbar() {
               filter: 'drop-shadow(0 0 8px rgba(37,99,235,0.3))',
             }}
           >
-            CoreLink
+            Solidum
           </span>
           <span className="text-[0.75rem] font-semibold text-slate-400 ml-0.5 hidden sm:inline">Group</span>
           <span className="ml-1.5 mt-auto mb-1 flex items-end">

@@ -40,7 +40,7 @@ function PageLoader() {
             className="text-4xl font-black font-raleway"
             style={{ background: 'linear-gradient(135deg,#3B82F6,#06B6D4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
           >
-            CoreLink
+            Solidum
           </span>
         </div>
         <span className="text-slate-500 text-sm font-medium tracking-widest uppercase">Group B.V.</span>

@@ -26,11 +26,11 @@ function Footer() {
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-1 mb-4">
               <span className="text-2xl font-black font-raleway text-white">MK</span>
-              <span className="text-2xl font-black font-raleway" style={{ background: 'linear-gradient(135deg,#3B82F6,#06B6D4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>CoreLink</span>
+              <span className="text-2xl font-black font-raleway" style={{ background: 'linear-gradient(135deg,#3B82F6,#06B6D4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Solidum</span>
               <span className="text-sm font-semibold text-slate-500 ml-1">Group</span>
             </Link>
             <p className="text-sm leading-relaxed text-slate-500 mb-6">
-              Drie divisies, één partner. Transport, IT-infrastructuur en beveiliging — MK CoreLink Group ontzorgt u volledig.
+              Drie divisies, één partner. Transport, IT-infrastructuur en beveiliging — MK Solidum Group ontzorgt u volledig.
             </p>
             <div className="flex items-center gap-3">
               {['linkedin', 'facebook'].map((s) => (
@@ -95,7 +95,7 @@ function Footer() {
                 <svg className="w-4 h-4 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                 </svg>
-                <a href="mailto:mkgroup@corelink.nl" className="text-sm text-slate-500 hover:text-blue-400 transition-colors">mkgroup@corelink.nl</a>
+                <a href="mailto:mkgroup@mksolidumgroup.nl" className="text-sm text-slate-500 hover:text-blue-400 transition-colors">mkgroup@mksolidumgroup.nl</a>
               </li>
             </ul>
           </div>
@@ -104,7 +104,7 @@ function Footer() {
 
       <div className="border-t border-slate-800">
         <div className="container-main py-5 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-xs text-slate-600">&copy; {new Date().getFullYear()} MK CoreLink Group B.V. Alle rechten voorbehouden.</p>
+          <p className="text-xs text-slate-600">&copy; {new Date().getFullYear()} MK Solidum Group B.V. Alle rechten voorbehouden.</p>
           <div className="flex flex-wrap gap-4 text-xs text-slate-600">
             <span>KvK: 66920280</span>
             <span>BTW: NL856752721B01</span>

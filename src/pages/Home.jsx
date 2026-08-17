@@ -47,7 +47,7 @@ const stats = [
 
 /* ── Reviews ── */
 const reviews = [
-  { name: 'J. van der Meer', company: 'VH Logistics B.V.', stars: 5, text: 'MK CoreLink Group heeft ons magazijn voorzien van een compleet netwerk. Professioneel, netjes en precies op tijd opgeleverd. Topwerk!' },
+  { name: 'J. van der Meer', company: 'VH Logistics B.V.', stars: 5, text: 'MK Solidum Group heeft ons magazijn voorzien van een compleet netwerk. Professioneel, netjes en precies op tijd opgeleverd. Topwerk!' },
   { name: 'R. Kuiper', company: 'MediFast Apotheek', stars: 5, text: 'Sinds wij samenwerken met MK Transport hoeven wij ons geen zorgen meer te maken over onze medische leveringen. Betrouwbaar en altijd bereikbaar.' },
   { name: 'D. Hendriks', company: 'SecurePoint BV', stars: 5, text: 'Het camerasysteem dat MK Security heeft geïnstalleerd werkt perfect. AVG-compliant, scherp beeld en uitstekende nazorg. Aanbevolen!' },
   { name: 'M. de Boer', company: 'Kantoor Plus Utrecht', stars: 4, text: 'Goede service, eerlijke prijzen. Wi-Fi werkt eindelijk overal in ons kantoor. Het team is vriendelijk en deskundig.' },
@@ -113,7 +113,7 @@ function DivisionsSection() {
           <span className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3 block">Onze Divisies</span>
           <h2 className="text-3xl md:text-4xl font-black font-raleway text-slate-900 mb-4">Drie pijlers, één groep</h2>
           <p className="text-slate-500 max-w-xl mx-auto leading-relaxed">
-            MK CoreLink Group bedient u vanuit drie gespecialiseerde divisies. Elk met hun eigen expertise, samen sterk.
+            MK Solidum Group bedient u vanuit drie gespecialiseerde divisies. Elk met hun eigen expertise, samen sterk.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -172,7 +172,7 @@ function AboutSection() {
             <div className="rounded-2xl overflow-hidden shadow-xl h-96">
               <img
                 src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=800&q=80"
-                alt="MK CoreLink Group team"
+                alt="MK Solidum Group team"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -183,9 +183,9 @@ function AboutSection() {
           </div>
           <div>
             <span className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3 block">Over ons</span>
-            <h2 className="text-3xl md:text-4xl font-black font-raleway text-slate-900 mb-6 leading-tight">Wie is MK CoreLink Group?</h2>
+            <h2 className="text-3xl md:text-4xl font-black font-raleway text-slate-900 mb-6 leading-tight">Wie is MK Solidum Group?</h2>
             <p className="text-slate-500 leading-relaxed mb-4">
-              MK CoreLink Group B.V. is een dynamische onderneming gevestigd in Bilthoven. Wij zijn gespecialiseerd in drie kerngebieden: medisch transport, IT-infrastructuur en beveiliging.
+              MK Solidum Group B.V. is een dynamische onderneming gevestigd in Bilthoven. Wij zijn gespecialiseerd in drie kerngebieden: medisch transport, IT-infrastructuur en beveiliging.
             </p>
             <p className="text-slate-500 leading-relaxed mb-6">
               Met onze drie divisies — MK Transport, MK Infra en MK Security — bieden wij een totaaloplossing. Uw project is ons project.
@@ -218,7 +218,7 @@ function FeaturesSection() {
     <section className="py-20" style={{ background: 'linear-gradient(135deg, #0A1628 0%, #0F2044 100%)' }}>
       <div className="container-main">
         <div className="text-center mb-14">
-          <span className="text-cyan-400 text-sm font-bold uppercase tracking-widest mb-3 block">Waarom MK CoreLink Group</span>
+          <span className="text-cyan-400 text-sm font-bold uppercase tracking-widest mb-3 block">Waarom MK Solidum Group</span>
           <h2 className="text-3xl md:text-4xl font-black font-raleway text-white mb-4">Onze kernwaarden</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -276,7 +276,7 @@ function ContactSection() {
               Neem vrijblijvend<br />contact op
             </h2>
             <p className="text-slate-500 leading-relaxed mb-8">
-              MK CoreLink Group levert passende en hoogwaardige maatwerkoplossingen. Of het nu gaat om transport, IT-infrastructuur of beveiliging — wij denken graag met u mee.
+              MK Solidum Group levert passende en hoogwaardige maatwerkoplossingen. Of het nu gaat om transport, IT-infrastructuur of beveiliging — wij denken graag met u mee.
             </p>
             <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-card mb-8">
               <div className="text-4xl font-black text-blue-600 leading-none mb-2">&ldquo;</div>
@@ -289,7 +289,7 @@ function ContactSection() {
                   MK
                 </div>
                 <div>
-                  <p className="font-bold text-slate-800 text-sm">MK CoreLink Group</p>
+                  <p className="font-bold text-slate-800 text-sm">MK Solidum Group</p>
                   <p className="text-slate-400 text-xs">Bilthoven, Nederland</p>
                 </div>
               </div>
@@ -297,7 +297,7 @@ function ContactSection() {
             <div className="space-y-4">
               {[
                 { icon: '\u{1F4DE}', label: 'Telefoon', value: '06 148 909 15', href: 'tel:0614890915' },
-                { icon: '\u{2709}\u{FE0F}', label: 'E-mail',   value: 'mkgroup@corelink.nl', href: 'mailto:mkgroup@corelink.nl' },
+                { icon: '\u{2709}\u{FE0F}', label: 'E-mail',   value: 'mkgroup@mksolidumgroup.nl', href: 'mailto:mkgroup@mksolidumgroup.nl' },
               ].map((c) => (
                 <a key={c.label} href={c.href} className="flex items-center gap-4 p-4 bg-white rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-card transition-all duration-200 group">
                   <span className="text-xl">{c.icon}</span>
@@ -414,7 +414,7 @@ function FreeScanCTA() {
       <div className="container-main text-center">
         <h2 className="text-3xl md:text-4xl font-black font-raleway text-white mb-4">Gratis adviesgesprek aanvragen</h2>
         <p className="text-blue-100 max-w-lg mx-auto leading-relaxed mb-8">
-          Benieuwd wat MK CoreLink Group voor uw bedrijf kan betekenen? Plan een kosteloos en vrijblijvend adviesgesprek — op locatie of telefonisch.
+          Benieuwd wat MK Solidum Group voor uw bedrijf kan betekenen? Plan een kosteloos en vrijblijvend adviesgesprek — op locatie of telefonisch.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-blue-700 font-bold rounded-xl hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105">
@@ -447,7 +447,7 @@ function PartnerSection() {
               Wij werken ook als onderaannemer
             </h2>
             <p className="text-slate-500 leading-relaxed mb-4">
-              Bent u een installatiebedrijf, aannemer, telecombedrijf of facility manager? MK CoreLink Group werkt graag als onderaannemer voor uw projecten.
+              Bent u een installatiebedrijf, aannemer, telecombedrijf of facility manager? MK Solidum Group werkt graag als onderaannemer voor uw projecten.
             </p>
             <p className="text-slate-500 leading-relaxed mb-6">
               Wij leveren gekwalificeerde datamonteurs, netwerk engineers, chauffeurs en beveiligingsspecialisten. Flexibel, betrouwbaar en met alle benodigde certificeringen.
@@ -470,7 +470,7 @@ function PartnerSection() {
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img
                 src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80"
-                alt="MK CoreLink Group samenwerking"
+                alt="MK Solidum Group samenwerking"
                 className="w-full h-80 object-cover"
               />
             </div>
@@ -490,9 +490,9 @@ function Home() {
     <div>
       <HeroGeometric
         badge="Transport · Infra · Security"
-        title1="MK CoreLink"
+        title1="MK Solidum"
         title2="Group"
-        description="Drie divisies, één partner. Van medisch transport en IT-infrastructuur tot beveiligingsoplossingen — MK CoreLink Group ontzorgt u volledig."
+        description="Drie divisies, één partner. Van medisch transport en IT-infrastructuur tot beveiligingsoplossingen — MK Solidum Group ontzorgt u volledig."
         ctaPrimary={{ label: 'Gratis adviesgesprek \u2192', href: '/contact' }}
         ctaSecondary={{ label: 'Onze diensten', href: '/diensten' }}
       />

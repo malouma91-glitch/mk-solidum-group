@@ -2,13 +2,13 @@ import { useState, useRef, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 /* ═══════════════════════════════════════════════════════
-   PERSONA — Daan van den Berg, Adviseur bij MK CoreLink Group
+   PERSONA — Daan van den Berg, Adviseur bij MK Solidum Group
    Warm, direct, deskundig — behandelt klant als koning
 ═══════════════════════════════════════════════════════ */
 const PERSONA = {
   name: 'Daan',
   full: 'Daan van den Berg',
-  role: 'Adviseur bij MK CoreLink Group',
+  role: 'Adviseur bij MK Solidum Group',
   // Realistic professional Dutch male from Unsplash
   photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&h=100&q=80',
 }
@@ -24,7 +24,7 @@ function detectIntent(input) {
   if (/\b(bedankt|dankjewel|dankuwel|dank u|dank je|super|geweldig|top|prima|fijn|perfect|mooi|hartstikke)\b/.test(t)) return 'thanks'
   if (/\b(doei|tot ziens|bye|ciao|later|tot later|afsluiten|ik ga)\b/.test(t)) return 'bye'
   if (/\b(hoe gaat|hoe is|hoe gaat het|alles goed|hoe ben|hoe staat)\b/.test(t)) return 'smalltalk'
-  if (/\b(wie zijn jullie|over jullie|jullie bedrijf|wat is mk|mk corelink|corelink group|opgericht|geschiedenis|achtergrond)\b/.test(t)) return 'company'
+  if (/\b(wie zijn jullie|over jullie|jullie bedrijf|wat is mk|mk solidum|solidum group|opgericht|geschiedenis|achtergrond)\b/.test(t)) return 'company'
   if (/\b(naam|wie ben|wie is daan|stelt u voor|wie praat|wie ben jij)\b/.test(t)) return 'whoami'
   if (/\b(prijs|kosten|tarief|budget|euro|betaal|goedkoop|duur|wat kost|hoeveel|investering|kostenplaatje)\b/.test(t)) return 'price'
   if (/\b(offerte|quote|aanvraag|voorstel|vrijblijvend|aanvragen)\b/.test(t)) return 'quote'
@@ -81,10 +81,10 @@ function buildResponse(intent, _input, ctx) {
     case 'greeting':
       return {
         text: pick([
-          `Hé, hallo${name}! 👋 Daan hier, adviseur bij MK CoreLink Group. Fijn dat u even langssurft. Waarmee kan ik u vandaag helpen?`,
-          `Hallo${name}! Welkom bij MK CoreLink Group. Ik ben Daan — zegt u het maar, wat kan ik voor u doen?`,
+          `Hé, hallo${name}! 👋 Daan hier, adviseur bij MK Solidum Group. Fijn dat u even langssurft. Waarmee kan ik u vandaag helpen?`,
+          `Hallo${name}! Welkom bij MK Solidum Group. Ik ben Daan — zegt u het maar, wat kan ik voor u doen?`,
           `Goeiedag${name}! Daan van den Berg hier. Leuk dat u contact opneemt — waar kan ik u mee van dienst zijn?`,
-          `Hoi${name}! Daan van MK CoreLink Group hier. Fijn dat u er bent. Heeft u een vraag over ons aanbod, of is er iets specifieks waar ik u mee kan helpen?`,
+          `Hoi${name}! Daan van MK Solidum Group hier. Fijn dat u er bent. Heeft u een vraag over ons aanbod, of is er iets specifieks waar ik u mee kan helpen?`,
         ]),
         suggestions: ['Welke diensten bieden jullie?', 'Wat kosten jullie diensten?', 'Ik wil een offerte'],
       }
@@ -92,10 +92,10 @@ function buildResponse(intent, _input, ctx) {
     case 'whoami':
       return {
         text: pick([
-          `Haha, goeie vraag! Ik ben Daan van den Berg, adviseur bij MK CoreLink Group. Ik help klanten dagelijks met vragen over netwerken, glasvezel, Wi-Fi, camerabeveiliging — alles op het gebied van IT-infrastructuur.\n\nKan ik ook u ergens mee helpen? 😄`,
-          `Ik ben Daan! Adviseur bij MK CoreLink Group in Bilthoven. Mijn werk is om klanten te helpen de juiste IT-infrastructuurkeuzes te maken — van advies tot oplevering. Wat kan ik voor u doen?`,
+          `Haha, goeie vraag! Ik ben Daan van den Berg, adviseur bij MK Solidum Group. Ik help klanten dagelijks met vragen over netwerken, glasvezel, Wi-Fi, camerabeveiliging — alles op het gebied van IT-infrastructuur.\n\nKan ik ook u ergens mee helpen? 😄`,
+          `Ik ben Daan! Adviseur bij MK Solidum Group in Bilthoven. Mijn werk is om klanten te helpen de juiste IT-infrastructuurkeuzes te maken — van advies tot oplevering. Wat kan ik voor u doen?`,
         ]),
-        suggestions: ['Wat doet MK CoreLink Group?', 'Offerte aanvragen', 'Hoe bereik ik jullie?'],
+        suggestions: ['Wat doet MK Solidum Group?', 'Offerte aanvragen', 'Hoe bereik ik jullie?'],
       }
 
     case 'smalltalk':
@@ -106,7 +106,7 @@ function buildResponse(intent, _input, ctx) {
           `Goed hoor — druk maar lekker! Klanten zoals u maken het werk de moeite waard. Zegt u het maar, wat speelt er bij u?`,
           `Heel goed! Net een installatie afgerond in Utrecht, nu even rustig. Dus perfect moment om u te helpen. Wat is uw vraag? 😊`,
         ]),
-        suggestions: ['Ik zoek een netwerkoplossing', 'Wat doet MK CoreLink Group precies?', 'Ik wil een offerte'],
+        suggestions: ['Ik zoek een netwerkoplossing', 'Wat doet MK Solidum Group precies?', 'Ik wil een offerte'],
       }
 
     case 'thanks':
@@ -124,7 +124,7 @@ function buildResponse(intent, _input, ctx) {
       return {
         text: pick([
           `Tot ziens${name}! Fijn gesprek gehad. Als u ooit vragen heeft, weet u ons te vinden. Succes! 👋`,
-          `Dag${name}! Prettige dag nog. En mocht er iets zijn — **06 148 909 15** of **mkgroup@corelink.nl**. We helpen u graag. 😊`,
+          `Dag${name}! Prettige dag nog. En mocht er iets zijn — **06 148 909 15** of **mkgroup@mksolidumgroup.nl**. We helpen u graag. 😊`,
           `Doei${name}! Hopelijk tot snel. Wij staan altijd voor u klaar. Fijne dag verder! ☀️`,
         ]),
         suggestions: [],
@@ -133,7 +133,7 @@ function buildResponse(intent, _input, ctx) {
     case 'services':
       return {
         text: pick([
-          `Zeker! MK CoreLink Group werkt vanuit **drie divisies**:\n\n🚚 **MK Transport**\n• Medische koeriersdiensten\n• Logistiek & distributie\n\n🌐 **MK Infra**\n• Internet bekabeling (CAT6A, glasvezel)\n• Patchkasten & switches\n• Netwerk aanleg (Wi-Fi, VLAN, firewalls)\n\n🎥 **MK Security**\n• IP-camerasystemen (Hikvision)\n• Beveiliging van panden (AJAX, Roger)\n\nWat spreekt u het meeste aan?`,
+          `Zeker! MK Solidum Group werkt vanuit **drie divisies**:\n\n🚚 **MK Transport**\n• Medische koeriersdiensten\n• Logistiek & distributie\n\n🌐 **MK Infra**\n• Internet bekabeling (CAT6A, glasvezel)\n• Patchkasten & switches\n• Netwerk aanleg (Wi-Fi, VLAN, firewalls)\n\n🎥 **MK Security**\n• IP-camerasystemen (Hikvision)\n• Beveiliging van panden (AJAX, Roger)\n\nWat spreekt u het meeste aan?`,
           `Goede vraag! Wij werken vanuit drie divisies. **MK Transport** voor medisch vervoer en logistiek, **MK Infra** voor IT-infrastructuur en netwerken, en **MK Security** voor camerabewaking en pandbeveiliging.\n\nElke divisie heeft zijn eigen specialisten. Wat is uw situatie? Dan verwijs ik u naar de juiste afdeling.`,
         ]),
         suggestions: ['MK Transport', 'MK Infra', 'MK Security', 'Offerte aanvragen'],
@@ -152,10 +152,10 @@ function buildResponse(intent, _input, ctx) {
     case 'quote':
       return {
         text: pick([
-          `Dat regel ik graag voor u! Een offerte is altijd vrijblijvend — u zit nergens aan vast. 👍\n\nNormaal gesproken plannen wij eerst een kort adviesgesprek op locatie in — duurt een half uurtje. Dan zien wij precies wat u nodig heeft en geven wij een eerlijke prijs.\n\nBel ons op **06 148 909 15** of mail naar **mkgroup@corelink.nl**. Of vraag het direct aan via onze website!`,
-          `Zeker, dat is de beste stap! Een offerte bij ons is gratis en volledig vrijblijvend.\n\nWij doen het liefst een korte rondleiding bij u op locatie — zo weet u zeker dat de offerte klopt met uw situatie. Geen standaard prijslijst die misschien niet past.\n\nMail naar **mkgroup@corelink.nl** of bel **06 148 909 15** — dan plannen wij iets in. 📅`,
+          `Dat regel ik graag voor u! Een offerte is altijd vrijblijvend — u zit nergens aan vast. 👍\n\nNormaal gesproken plannen wij eerst een kort adviesgesprek op locatie in — duurt een half uurtje. Dan zien wij precies wat u nodig heeft en geven wij een eerlijke prijs.\n\nBel ons op **06 148 909 15** of mail naar **mkgroup@mksolidumgroup.nl**. Of vraag het direct aan via onze website!`,
+          `Zeker, dat is de beste stap! Een offerte bij ons is gratis en volledig vrijblijvend.\n\nWij doen het liefst een korte rondleiding bij u op locatie — zo weet u zeker dat de offerte klopt met uw situatie. Geen standaard prijslijst die misschien niet past.\n\nMail naar **mkgroup@mksolidumgroup.nl** of bel **06 148 909 15** — dan plannen wij iets in. 📅`,
         ]),
-        suggestions: ['Offerte via website', '06 148 909 15 bellen', 'mkgroup@corelink.nl mailen'],
+        suggestions: ['Offerte via website', '06 148 909 15 bellen', 'mkgroup@mksolidumgroup.nl mailen'],
       }
 
     case 'fiber':
@@ -296,10 +296,10 @@ function buildResponse(intent, _input, ctx) {
     case 'contact':
       return {
         text: pick([
-          `U kunt ons altijd bereiken! 📞\n\n• **Telefoon**: 06 148 909 15 — ma t/m vr, 08:00–17:30\n• **E-mail**: mkgroup@corelink.nl — reactie binnen één werkdag\n• **Adres**: Bilthoven (Utrecht) — bezoek op afspraak\n\nOf zal ik een terugbelverzoek voor u doorzetten? Dan belt een van onze adviseurs u vandaag nog terug.`,
-          `Bereikbaar zijn is voor ons heel belangrijk. U kunt ons bellen op **06 148 909 15**, mailen naar **mkgroup@corelink.nl**, of het contactformulier invullen op onze website.\n\nWilt u liever dat wij u bellen? Geef het aan — dan zorg ik dat een collega u zo snel mogelijk terugbelt. Wij reageren altijd dezelfde dag.`,
+          `U kunt ons altijd bereiken! 📞\n\n• **Telefoon**: 06 148 909 15 — ma t/m vr, 08:00–17:30\n• **E-mail**: mkgroup@mksolidumgroup.nl — reactie binnen één werkdag\n• **Adres**: Bilthoven (Utrecht) — bezoek op afspraak\n\nOf zal ik een terugbelverzoek voor u doorzetten? Dan belt een van onze adviseurs u vandaag nog terug.`,
+          `Bereikbaar zijn is voor ons heel belangrijk. U kunt ons bellen op **06 148 909 15**, mailen naar **mkgroup@mksolidumgroup.nl**, of het contactformulier invullen op onze website.\n\nWilt u liever dat wij u bellen? Geef het aan — dan zorg ik dat een collega u zo snel mogelijk terugbelt. Wij reageren altijd dezelfde dag.`,
         ]),
-        suggestions: ['06 148 909 15', 'mkgroup@corelink.nl', 'Contactformulier openen'],
+        suggestions: ['06 148 909 15', 'mkgroup@mksolidumgroup.nl', 'Contactformulier openen'],
       }
 
     case 'references':
@@ -350,7 +350,7 @@ function buildResponse(intent, _input, ctx) {
     case 'partnership':
       return {
         text: pick([
-          `Samenwerken met MK CoreLink Group — absoluut een goed idee! 🤝\n\nWij werken op twee manieren samen:\n\n**Als onderaannemer voor u:**\n• Wij voeren uit wat u opdraagt — transport, infra of security\n• Wij werken discreet onder uw vlag als dat gewenst is\n• Vaste prijsafspraken, geen verrassingen\n\n**U besteedt bij ons uit:**\n• Wij nemen een volledige dienst over — van planning tot uitvoering\n• U houdt regie, wij zorgen voor de rest\n\nWat voor samenwerking ziet u voor zich?`,
+          `Samenwerken met MK Solidum Group — absoluut een goed idee! 🤝\n\nWij werken op twee manieren samen:\n\n**Als onderaannemer voor u:**\n• Wij voeren uit wat u opdraagt — transport, infra of security\n• Wij werken discreet onder uw vlag als dat gewenst is\n• Vaste prijsafspraken, geen verrassingen\n\n**U besteedt bij ons uit:**\n• Wij nemen een volledige dienst over — van planning tot uitvoering\n• U houdt regie, wij zorgen voor de rest\n\nWat voor samenwerking ziet u voor zich?`,
           `Wij werken graag als partner of onderaannemer voor andere bedrijven. Denk aan installatiebureau's, telecombedrijven, aannemers en facility managers die extra capaciteit nodig hebben.\n\nWij zijn flexibel, betrouwbaar en hebben alle certificeringen in huis. U hoeft niet bang te zijn voor kwaliteitsproblemen — wij werken conform uw standaarden.\n\nBent u opdrachtgever die ons wil inhuren, of zoekt u een structurele samenwerking?`,
         ]),
         suggestions: ['Ons inhuren als onderaannemer', 'Dienst uitbesteden', 'Vaste samenwerking bespreken', 'Contact opnemen'],
@@ -359,8 +359,8 @@ function buildResponse(intent, _input, ctx) {
     case 'company':
       return {
         text: pick([
-          `MK CoreLink Group B.V. is opgericht op **26 september 2016** — oorspronkelijk als Kali Transport V.O.F. en sindsdien uitgegroeid tot een volwaardige multi-divisie groep.\n\nWat wij doen:\n🚚 **MK Transport** — medisch transport & logistiek\n🌐 **MK Infra** — IT-infrastructuur & netwerken\n🔐 **MK Security** — camerabewaking & pandbeveiliging\n\nKantoor: **Bilthoven (Utrecht)** — maar wij werken door heel Nederland. Eén partner voor drie vakgebieden — dat is onze kracht.`,
-          `MK CoreLink Group bestaat al since 2016 en heeft zich ontwikkeld van een transportbedrijf naar een volledige dienstverlener op het gebied van transport, IT-infrastructuur en beveiliging.\n\nWij geloven in één aanspreekpunt voor meerdere behoeften. Geen losse leveranciers, geen miscommunicatie — gewoon één partij die alles regelt.\n\nKvK-nummer: **66920280** | Gevestigd in **Bilthoven**\n\nWat wilt u van ons weten?`,
+          `MK Solidum Group B.V. is opgericht op **26 september 2016** — oorspronkelijk als Kali Transport V.O.F. en sindsdien uitgegroeid tot een volwaardige multi-divisie groep.\n\nWat wij doen:\n🚚 **MK Transport** — medisch transport & logistiek\n🌐 **MK Infra** — IT-infrastructuur & netwerken\n🔐 **MK Security** — camerabewaking & pandbeveiliging\n\nKantoor: **Bilthoven (Utrecht)** — maar wij werken door heel Nederland. Eén partner voor drie vakgebieden — dat is onze kracht.`,
+          `MK Solidum Group bestaat al since 2016 en heeft zich ontwikkeld van een transportbedrijf naar een volledige dienstverlener op het gebied van transport, IT-infrastructuur en beveiliging.\n\nWij geloven in één aanspreekpunt voor meerdere behoeften. Geen losse leveranciers, geen miscommunicatie — gewoon één partij die alles regelt.\n\nKvK-nummer: **66920280** | Gevestigd in **Bilthoven**\n\nWat wilt u van ons weten?`,
         ]),
         suggestions: ['Onze drie divisies', 'Ons team', 'Offerte aanvragen', 'Contact opnemen'],
       }
@@ -368,8 +368,8 @@ function buildResponse(intent, _input, ctx) {
     case 'team':
       return {
         text: pick([
-          `Achter MK CoreLink Group staan twee eigenaren:\n\n👤 **Mohammed Alou** — Eigenaar & Directeur\nSpecialist in data, netwerken en beveiliging. Verantwoordelijk voor **MK Infra** en **MK Security** — van bekabeling en netwerk aanleg tot camerasystemen en toegangscontrole. VCA VOL gecertificeerd.\n\n👤 **Karim Charradi** — Eigenaar & Directeur\nDe specialist in transport, warehouse en logistiek. Uw aanspreekpunt voor alles binnen **MK Transport** — medische routes, distributie en magazijncoördinatie. VCA VOL gecertificeerd.\n\nSamen een combinatie van technische kennis én operationele expertise. U praat altijd met iemand die het vak door en door kent.`,
-          `MK CoreLink Group wordt geleid door twee eigenaren die elk hun eigen vakgebied hebben:\n\n**Mohammed Alou** — data monteur, netwerken & beveiliging (MK Infra + MK Security)\n**Karim Charradi** — transport, logistiek & warehouse (MK Transport)\n\nBeide heren zijn **VCA VOL gecertificeerd** en dagelijks actief in het veld. Geen managers achter een bureau — mensen die het werk zelf kennen.\n\nVraag over transport of logistiek? Dan is Karim uw man. IT-infrastructuur of beveiliging? Dan is Mohammed uw aanspreekpunt. Wie heeft u nodig?`,
+          `Achter MK Solidum Group staan twee eigenaren:\n\n👤 **Mohammed Alou** — Eigenaar & Directeur\nSpecialist in data, netwerken en beveiliging. Verantwoordelijk voor **MK Infra** en **MK Security** — van bekabeling en netwerk aanleg tot camerasystemen en toegangscontrole. VCA VOL gecertificeerd.\n\n👤 **Karim Charradi** — Eigenaar & Directeur\nDe specialist in transport, warehouse en logistiek. Uw aanspreekpunt voor alles binnen **MK Transport** — medische routes, distributie en magazijncoördinatie. VCA VOL gecertificeerd.\n\nSamen een combinatie van technische kennis én operationele expertise. U praat altijd met iemand die het vak door en door kent.`,
+          `MK Solidum Group wordt geleid door twee eigenaren die elk hun eigen vakgebied hebben:\n\n**Mohammed Alou** — data monteur, netwerken & beveiliging (MK Infra + MK Security)\n**Karim Charradi** — transport, logistiek & warehouse (MK Transport)\n\nBeide heren zijn **VCA VOL gecertificeerd** en dagelijks actief in het veld. Geen managers achter een bureau — mensen die het werk zelf kennen.\n\nVraag over transport of logistiek? Dan is Karim uw man. IT-infrastructuur of beveiliging? Dan is Mohammed uw aanspreekpunt. Wie heeft u nodig?`,
         ]),
         suggestions: ['Transport / logistiek → Karim', 'Infra / security → Mohammed', 'Offerte aanvragen'],
       }
@@ -377,7 +377,7 @@ function buildResponse(intent, _input, ctx) {
     case 'opening_hours':
       return {
         text: pick([
-          `Onze kantooruren zijn **maandag t/m vrijdag van 08:00 tot 17:30**. 📅\n\nMaar eerlijk gezegd: voor urgente zaken zijn wij ook buiten kantooruren bereikbaar. Zeker voor medisch transport gaan wij ook 's avonds en in het weekend de weg op.\n\n📞 **06 148 909 15** — voor spoedgevallen altijd beschikbaar\n✉️ **mkgroup@corelink.nl** — reactie binnen één werkdag\n\nHeeft u een spoedvraag of is het een regulier verzoek?`,
+          `Onze kantooruren zijn **maandag t/m vrijdag van 08:00 tot 17:30**. 📅\n\nMaar eerlijk gezegd: voor urgente zaken zijn wij ook buiten kantooruren bereikbaar. Zeker voor medisch transport gaan wij ook 's avonds en in het weekend de weg op.\n\n📞 **06 148 909 15** — voor spoedgevallen altijd beschikbaar\n✉️ **mkgroup@mksolidumgroup.nl** — reactie binnen één werkdag\n\nHeeft u een spoedvraag of is het een regulier verzoek?`,
           `Kantooruren: **ma t/m vr, 08:00–17:30**.\n\nVoor medisch transport en spoedritten zijn wij ook buiten kantooruren actief. De planning loopt door — u hoeft nooit te wachten als er haast bij is.\n\nRegelmatige vragen beantwoorden wij altijd dezelfde dag. Wat kan ik voor u doen?`,
         ]),
         suggestions: ['Spoedrit aanvragen', 'Reguliere afspraak', '06 148 909 15 bellen'],
@@ -387,14 +387,14 @@ function buildResponse(intent, _input, ctx) {
       return {
         text: pick([
           `Ons kantoor staat in **Bilthoven, Utrecht** 📍\n\n**Sterrenhof 10, 3721 WL Bilthoven**\n\nCentrale ligging in Nederland — goed bereikbaar vanuit Utrecht, Amersfoort, Hilversum en Amsterdam. Voldoende parkeerruimte aanwezig.\n\nBezoek is altijd **op afspraak** — bel even en wij plannen iets in dat u uitkomt. Wat brengt u naar ons?`,
-          `Ons vestigingsadres:\n\n📍 **Sterrenhof 10**\n**3721 WL Bilthoven (Utrecht)**\n\nKleine 10 minuten van Utrecht Centraal, goed bereikbaar via A28. Maar wij komen ook graag bij u langs — dat doen wij het liefst voor een eerste adviesgesprek.\n\nAfspraak maken? Bel **06 148 909 15** of mail **mkgroup@corelink.nl**.`,
+          `Ons vestigingsadres:\n\n📍 **Sterrenhof 10**\n**3721 WL Bilthoven (Utrecht)**\n\nKleine 10 minuten van Utrecht Centraal, goed bereikbaar via A28. Maar wij komen ook graag bij u langs — dat doen wij het liefst voor een eerste adviesgesprek.\n\nAfspraak maken? Bel **06 148 909 15** of mail **mkgroup@mksolidumgroup.nl**.`,
         ]),
         suggestions: ['Afspraak inplannen', 'Route bekijken', 'Liever een huisbezoek'],
       }
 
     case 'kvk':
       return {
-        text: `Geen probleem — voor inkoopafdelingen en offerteaanvragen:\n\n🏢 **MK CoreLink Group B.V.**\n📋 **KvK-nummer:** 66920280\n🔢 **RSIN/BTW:** 856752721\n📍 **Adres:** Sterrenhof 10, 3721 WL Bilthoven\n📞 **Tel:** 06 148 909 15\n✉️ **Mail:** mkgroup@corelink.nl\n\nHeeft u een specifiek document nodig zoals een KvK-uittreksel of bankgarantie? Dan sturen wij dat graag toe.`,
+        text: `Geen probleem — voor inkoopafdelingen en offerteaanvragen:\n\n🏢 **MK Solidum Group B.V.**\n📋 **KvK-nummer:** 66920280\n🔢 **RSIN/BTW:** 856752721\n📍 **Adres:** Sterrenhof 10, 3721 WL Bilthoven\n📞 **Tel:** 06 148 909 15\n✉️ **Mail:** mkgroup@mksolidumgroup.nl\n\nHeeft u een specifiek document nodig zoals een KvK-uittreksel of bankgarantie? Dan sturen wij dat graag toe.`,
         suggestions: ['KvK-uittreksel opvragen', 'Offerte aanvragen', 'Contact opnemen'],
       }
 
@@ -422,7 +422,7 @@ function buildResponse(intent, _input, ctx) {
           `Spoed? Geen probleem — wij zijn er voor u! 🚨\n\nBel ons **direct** op **06 148 909 15** — ook buiten kantooruren voor urgente gevallen.\n\nVoor **medisch transport** (spoedritten, tijdkritische monsters): wij zijn dag en nacht bereikbaar.\n\nVoor **IT-storingen** (netwerk plat, camera's offline): wij proberen dezelfde dag te komen.\n\nVoor **beveiligingsstoringen** (alarm, toegangscontrole): we behandelen dit als prioriteit.\n\nBel direct — dan regelen wij de rest. 📞`,
           `Urgent? Bel ons meteen: **06 148 909 15** 📞\n\nWij begrijpen dat sommige situaties niet kunnen wachten. Medische transporten, netwerkstoringen, beveiligingsincidenten — wij behandelen spoedgevallen altijd met prioriteit.\n\nKunt u kort beschrijven wat er speelt? Dan schakel ik direct de juiste persoon in.`,
         ]),
-        suggestions: ['06 148 909 15 bellen', 'mkgroup@corelink.nl', 'Terugbelverzoek spoed'],
+        suggestions: ['06 148 909 15 bellen', 'mkgroup@mksolidumgroup.nl', 'Terugbelverzoek spoed'],
       }
 
     case 'certification':
@@ -440,7 +440,7 @@ function buildResponse(intent, _input, ctx) {
         return {
           text: pick([
             `Hmm, dat is een vraag waar ik even over moet nadenken. 😅 Eerlijk gezegd kan ik dit het beste doorspelen naar een collega die hier meer van weet.\n\nZal ik zorgen dat iemand u terugbelt? Of bel zelf even: **06 148 909 15**. Dan helpen wij u direct verder.`,
-            `Goede vraag — maar ik wil u geen half antwoord geven. Dit soort vragen beantwoorden wij het liefst persoonlijk.\n\nMag ik u doorverwijzen? **06 148 909 15** of **mkgroup@corelink.nl** — dan koppelen wij de juiste specialist aan u.`,
+            `Goede vraag — maar ik wil u geen half antwoord geven. Dit soort vragen beantwoorden wij het liefst persoonlijk.\n\nMag ik u doorverwijzen? **06 148 909 15** of **mkgroup@mksolidumgroup.nl** — dan koppelen wij de juiste specialist aan u.`,
           ]),
           suggestions: ['Terugbelverzoek', 'Ik stel een andere vraag', 'Offerte aanvragen'],
         }
@@ -512,7 +512,7 @@ export default function ChatBot() {
     {
       id: 1,
       from: 'bot',
-      text: `Hallo! 👋 U spreekt met **Daan van den Berg**, adviseur bij MK CoreLink Group. Fijn dat u contact opneemt!\n\nWij helpen u met **transport**, **IT-infrastructuur** en **beveiliging**. Waarmee kan ik u vandaag helpen?`,
+      text: `Hallo! 👋 U spreekt met **Daan van den Berg**, adviseur bij MK Solidum Group. Fijn dat u contact opneemt!\n\nWij helpen u met **transport**, **IT-infrastructuur** en **beveiliging**. Waarmee kan ik u vandaag helpen?`,
       suggestions: ['Welke divisies hebben jullie?', 'Ik wil een offerte', 'Wat zijn de kosten?'],
       time: new Date(),
     },
@@ -862,7 +862,7 @@ export default function ChatBot() {
               className="shrink-0 text-center py-1.5"
               style={{ background: '#060e1e', borderTop: '1px solid rgba(255,255,255,0.03)' }}
             >
-              <p className="text-[10px] text-slate-700">Gesprek met Daan van den Berg · MK CoreLink Group · 06 148 909 15</p>
+              <p className="text-[10px] text-slate-700">Gesprek met Daan van den Berg · MK Solidum Group · 06 148 909 15</p>
             </div>
           </motion.div>
         )}

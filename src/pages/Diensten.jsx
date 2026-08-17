@@ -72,7 +72,7 @@ function Diensten() {
           </span>
           <h1 className="text-4xl md:text-5xl font-black font-raleway text-white mb-4">Onze diensten</h1>
           <p className="text-slate-300 max-w-xl leading-relaxed">
-            Drie divisies, zeven diensten. Van medisch transport tot IT-infrastructuur en beveiliging — MK CoreLink Group is uw totaalpartner.
+            Drie divisies, zeven diensten. Van medisch transport tot IT-infrastructuur en beveiliging — MK Solidum Group is uw totaalpartner.
           </p>
         </div>
       </section>
@@ -116,7 +116,7 @@ function Diensten() {
               <div className="bg-white rounded-2xl p-6 border border-slate-200 space-y-3">
                 {[
                   { label: 'Telefoon', val: '06 148 909 15', href: 'tel:0614890915' },
-                  { label: 'E-mail', val: 'mkgroup@corelink.nl', href: 'mailto:mkgroup@corelink.nl' },
+                  { label: 'E-mail', val: 'mkgroup@mksolidumgroup.nl', href: 'mailto:mkgroup@mksolidumgroup.nl' },
                 ].map((c) => (
                   <a key={c.label} href={c.href} className="flex items-center gap-3 text-slate-600 hover:text-blue-600 transition-colors">
                     <span className="text-blue-600 font-bold text-sm w-16">{c.label}:</span>

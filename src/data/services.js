@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════
-   MK CoreLink Group B.V. — Divisies & Diensten
+   MK Solidum Group B.V. — Divisies & Diensten
 ═══════════════════════════════════════════════════════ */
 
 export const divisions = [

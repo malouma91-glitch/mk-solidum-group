@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════
-   MK CoreLink Group B.V. — Team & Management
+   MK Solidum Group B.V. — Team & Management
    Bilthoven · Transport · Infra · Security
 ═══════════════════════════════════════════════════════ */
 
@@ -9,18 +9,18 @@ export const management = [
     name: 'Mohammed Alou',
     role: 'Founding Partner & Algemeen Directeur',
     photo: '/images/team/mohammed-alou.png',
-    bio: 'Mohammed is de drijvende kracht achter MK CoreLink Group. Als allround ondernemer combineert hij diepgaande kennis van transport, IT-infrastructuur én beveiliging — een zeldzame combinatie in de markt. Vanuit zijn visie werkt hij aan een bedrijf dat kwaliteit, betrouwbaarheid en klantgerichtheid op alle drie de divisies centraal stelt. Mohammed stelt altijd de klant op de eerste plaats.',
+    bio: 'Mohammed is de drijvende kracht achter MK Solidum Group. Als allround ondernemer combineert hij diepgaande kennis van transport, IT-infrastructuur én beveiliging — een zeldzame combinatie in de markt. Vanuit zijn visie werkt hij aan een bedrijf dat kwaliteit, betrouwbaarheid en klantgerichtheid op alle drie de divisies centraal stelt. Mohammed stelt altijd de klant op de eerste plaats.',
     specialisaties: ['Transport & Logistiek', 'IT-Infrastructuur', 'Camerabeveiliging', 'Projectmanagement', 'Bedrijfsstrategie'],
     badge: 'CEO & Oprichter',
     badgeColor: '#1E40AF',
   },
   {
     name: 'Karim Charradi',
-    role: 'Co-Founder & Operationeel Directeur',
+    role: 'Mede-oprichter & Directeur MK Transport',
     photo: '/images/team/karim-charradi.png',
-    bio: 'Karim is medeoprichter van MK CoreLink Group en de specialist op het gebied van warehouse management en logistieke coördinatie. Als operationeel directeur zorgt hij ervoor dat onze uitvoerende teams bij opdrachtgevers soepel draaien. Met zijn uitgebreide kennis van transportplanning, magazijnlogistiek en coördinerende functies is hij de verbindende schakel tussen opdrachtgever en uitvoering.',
+    bio: 'Karim is medeoprichter van MK Transport, de divisie van MK Solidum Group waar hij specialist is op het gebied van warehouse management en logistieke coördinatie. Als operationeel directeur zorgt hij ervoor dat onze uitvoerende teams bij opdrachtgevers soepel draaien. Met zijn uitgebreide kennis van transportplanning, magazijnlogistiek en coördinerende functies is hij de verbindende schakel tussen opdrachtgever en uitvoering.',
     specialisaties: ['Warehouse Management', 'Transport Coördinatie', 'Logistieke Planning', 'Teamleiding Uitvoer', 'Opdrachtgever Relaties'],
-    badge: 'COO & Medeoprichter',
+    badge: 'Mede-oprichter MK Transport',
     badgeColor: '#065F46',
   },
 ]

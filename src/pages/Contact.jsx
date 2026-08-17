@@ -10,8 +10,8 @@ const contactInfo = [
   },
   {
     label: 'E-mailadres',
-    value: 'mkgroup@corelink.nl',
-    href: 'mailto:mkgroup@corelink.nl',
+    value: 'mkgroup@mksolidumgroup.nl',
+    href: 'mailto:mkgroup@mksolidumgroup.nl',
     icon: <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>,
   },
   {
@@ -53,7 +53,7 @@ function Contact() {
                 Hoe kunt u ons bereiken?
               </h2>
               <p className="text-slate-500 leading-relaxed mb-8">
-                MK CoreLink Group bedient u vanuit drie divisies: MK Transport, MK Infra en MK Security. Of het nu gaat om medisch vervoer, netwerk aanleg of camerabewaking — wij helpen u graag.
+                MK Solidum Group bedient u vanuit drie divisies: MK Transport, MK Infra en MK Security. Of het nu gaat om medisch vervoer, netwerk aanleg of camerabewaking — wij helpen u graag.
               </p>
 
               <div className="space-y-4 mb-10">
@@ -78,14 +78,14 @@ function Contact() {
               <div className="bg-gradient-to-br from-slate-900 to-navy-800 rounded-2xl p-6" style={{ background: 'linear-gradient(135deg,#0A1628,#0F2044)' }}>
                 <div className="text-3xl font-black text-blue-400 leading-none mb-3">&ldquo;</div>
                 <p className="text-slate-300 text-sm leading-relaxed italic">
-                  MK CoreLink Group — drie divisies, één betrouwbare partner. Onze kracht ligt in het volledig ontzorgen van onze klanten.
+                  MK Solidum Group — drie divisies, één betrouwbare partner. Onze kracht ligt in het volledig ontzorgen van onze klanten.
                 </p>
                 <div className="mt-4 flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0"
                     style={{ background: 'linear-gradient(135deg,#2563EB,#06B6D4)' }}>
                     MK
                   </div>
-                  <span className="text-slate-400 text-xs font-semibold">— MK CoreLink Group team</span>
+                  <span className="text-slate-400 text-xs font-semibold">— MK Solidum Group team</span>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@ function Contact() {
           <h3 className="text-xl font-black font-raleway text-slate-900 mb-6 text-center">Onze locatie</h3>
           <div className="rounded-2xl overflow-hidden shadow-lg h-80 border border-slate-200">
             <iframe
-              title="MK CoreLink Group locatie — Sterrenhof 10, Bilthoven"
+              title="MK Solidum Group locatie — Sterrenhof 10, Bilthoven"
               src="https://maps.google.com/maps?q=Sterrenhof+10,+3723WR+Bilthoven,+Nederland&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"

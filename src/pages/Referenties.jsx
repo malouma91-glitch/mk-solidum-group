@@ -7,7 +7,7 @@ const testimonials = [
     company: 'Fulfilment Achterhoek',
     initials: 'FA',
     color: '#1a8fd1',
-    text: '"We zijn zeer tevreden over de lange termijn samenwerking met MK CoreLink Group. Een betrouwbare partij, geen onnodige kosten, goed bereikbaar, hard werken en netjes opleveren van werkzaamheden. Kortom de perfecte partner voor gedegen advies en realisatie van de gevraagde diensten."',
+    text: '"We zijn zeer tevreden over de lange termijn samenwerking met MK Solidum Group. Een betrouwbare partij, geen onnodige kosten, goed bereikbaar, hard werken en netjes opleveren van werkzaamheden. Kortom de perfecte partner voor gedegen advies en realisatie van de gevraagde diensten."',
     role: 'Fulfilment Achterhoek',
   },
   {
@@ -23,7 +23,7 @@ const testimonials = [
     company: 'ROC Midden Nederland',
     initials: 'ROC',
     color: '#1e8449',
-    text: '"Dankzij MK CoreLink Group beschikken wij nu over een betrouwbare en schaalbare Wi-Fi infrastructuur die onze studenten en docenten overal in het gebouw optimaal ondersteunt. De implementatie verliep soepel en de nazorg is uitstekend."',
+    text: '"Dankzij MK Solidum Group beschikken wij nu over een betrouwbare en schaalbare Wi-Fi infrastructuur die onze studenten en docenten overal in het gebouw optimaal ondersteunt. De implementatie verliep soepel en de nazorg is uitstekend."',
     role: 'Hoofd ICT, ROC Midden Nederland',
   },
   {
@@ -31,7 +31,7 @@ const testimonials = [
     company: 'Gemeente Nieuwegein',
     initials: 'GN',
     color: '#1a3a5c',
-    text: '"MK CoreLink Group heeft voor ons een complete netwerkinfrastructuur gerealiseerd in ons nieuwe gemeentekantoor. Het project verliep vlekkeloos, binnen de afgesproken tijd en het budget. Professioneel, communicatief sterk en ze weten wat ze doen."',
+    text: '"MK Solidum Group heeft voor ons een complete netwerkinfrastructuur gerealiseerd in ons nieuwe gemeentekantoor. Het project verliep vlekkeloos, binnen de afgesproken tijd en het budget. Professioneel, communicatief sterk en ze weten wat ze doen."',
     role: 'IT Manager, Gemeente Nieuwegein',
   },
   {
@@ -39,7 +39,7 @@ const testimonials = [
     company: 'Logistiek Bedrijf XL',
     initials: 'LBX',
     color: '#e67e22',
-    text: '"Voor onze nieuwe distributielocatie heeft MK CoreLink Group een complete glasvezel en netwerk infrastructuur aangelegd. Van advies tot oplevering was alles perfect geregeld. De kwaliteit van de installatie is uitstekend."',
+    text: '"Voor onze nieuwe distributielocatie heeft MK Solidum Group een complete glasvezel en netwerk infrastructuur aangelegd. Van advies tot oplevering was alles perfect geregeld. De kwaliteit van de installatie is uitstekend."',
     role: 'Operations Director, LBX',
   },
   {
@@ -47,7 +47,7 @@ const testimonials = [
     company: 'Tech Startup Hub',
     initials: 'TSH',
     color: '#2563EB',
-    text: '"Als snelgroeiend techbedrijf hebben wij een flexibele en schaalbare IT-infrastructuur nodig. MK CoreLink Group heeft precies begrepen wat wij nodig hadden en een oplossing geleverd die met ons kan meegroeien. Uitstekende service."',
+    text: '"Als snelgroeiend techbedrijf hebben wij een flexibele en schaalbare IT-infrastructuur nodig. MK Solidum Group heeft precies begrepen wat wij nodig hadden en een oplossing geleverd die met ons kan meegroeien. Uitstekende service."',
     role: 'CTO, Tech Startup Hub',
   },
 ]
@@ -216,7 +216,7 @@ function Referenties() {
         <div className="container-main text-center">
           <h2 className="text-3xl font-black font-raleway text-white mb-4">Wilt u ook een tevreden klant worden?</h2>
           <p className="text-slate-400 text-sm mb-8 max-w-lg mx-auto">
-            Neem vrijblijvend contact met ons op en ontdek wat MK CoreLink Group voor uw organisatie kan betekenen.
+            Neem vrijblijvend contact met ons op en ontdek wat MK Solidum Group voor uw organisatie kan betekenen.
           </p>
           <Link to="/contact" className="btn-primary">
             Neem contact op →

@@ -6,7 +6,7 @@ const faqData = {
     label: 'Algemeen',
     color: '#2563EB',
     items: [
-      { q: 'Wat doet MK CoreLink Group?', a: 'MK CoreLink Group is actief vanuit drie divisies: MK Transport (medisch vervoer & logistiek), MK Infra (netwerken, bekabeling & glasvezel) en MK Security (camerasystemen & toegangscontrole). Wij bieden een totaaloplossing voor bedrijven die op zoek zijn naar een betrouwbare partner.' },
+      { q: 'Wat doet MK Solidum Group?', a: 'MK Solidum Group is actief vanuit drie divisies: MK Transport (medisch vervoer & logistiek), MK Infra (netwerken, bekabeling & glasvezel) en MK Security (camerasystemen & toegangscontrole). Wij bieden een totaaloplossing voor bedrijven die op zoek zijn naar een betrouwbare partner.' },
       { q: 'Waar zijn jullie gevestigd?', a: 'Ons kantoor is gevestigd in Bilthoven (gemeente De Bilt), nabij Utrecht. Wij werken door heel Nederland, met focus op de Randstad en Brabant.' },
       { q: 'Hoeveel kost een project?', a: 'Elk project is maatwerk — daarom geven wij altijd een vrijblijvende offerte na een inventarisatie. Kleine installaties starten vanaf enkele honderden euro\'s, grotere projecten lopen op tot tienduizenden euro\'s. Wij zijn altijd transparant over onze tarieven.' },
       { q: 'Werken jullie ook als onderaannemer?', a: 'Ja! Wij werken regelmatig als onderaannemer voor aannemers, installatiebureau\'s, telecombedrijven en facility managers. Wij leveren gekwalificeerde datamonteurs, chauffeurs en beveiligingsspecialisten met alle certificeringen.' },
