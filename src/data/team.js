@@ -16,11 +16,11 @@ export const management = [
   },
   {
     name: 'Karim Charradi',
-    role: 'Mede-oprichter & Directeur MK Transport',
+    role: 'Co-Founder & Operationeel Directeur',
     photo: '/images/team/karim-charradi.png',
-    bio: 'Karim is medeoprichter van MK Transport, de divisie van MK Solidum Group waar hij specialist is op het gebied van warehouse management en logistieke coördinatie. Als operationeel directeur zorgt hij ervoor dat onze uitvoerende teams bij opdrachtgevers soepel draaien. Met zijn uitgebreide kennis van transportplanning, magazijnlogistiek en coördinerende functies is hij de verbindende schakel tussen opdrachtgever en uitvoering.',
+    bio: 'Karim is medeoprichter van MK Solidum Group en de specialist op het gebied van warehouse management en logistieke coördinatie. Als operationeel directeur zorgt hij ervoor dat onze uitvoerende teams bij opdrachtgevers soepel draaien. Met zijn uitgebreide kennis van transportplanning, magazijnlogistiek en coördinerende functies is hij de verbindende schakel tussen opdrachtgever en uitvoering.',
     specialisaties: ['Warehouse Management', 'Transport Coördinatie', 'Logistieke Planning', 'Teamleiding Uitvoer', 'Opdrachtgever Relaties'],
-    badge: 'Mede-oprichter MK Transport',
+    badge: 'COO & Medeoprichter',
     badgeColor: '#065F46',
   },
 ]
