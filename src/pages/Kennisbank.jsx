@@ -53,7 +53,7 @@ const articles = [
       { type: 'h2', text: 'Waarom is het nodig?' },
       { type: 'p', text: 'Zonder site survey plaatst u access points op gevoel. Het gevolg: dode zones, overbelaste access points en frustratie bij medewerkers. Een site survey voorkomt dit — het is een investering van een paar uur die u jaren aan problemen bespaart.' },
       { type: 'h2', text: 'Hoe doen wij dit?' },
-      { type: 'p', text: 'Wij voeren zowel passieve als actieve site surveys uit met professionele meetapparatuur. Na de meting krijgt u een heatmap van uw pand met de aanbevolen AP-plaatsing, kanaalindeling en verwachte capaciteit. Onze engineers installeren vervolgens Ubiquiti UniFi access points met naadloze roaming.' },
+      { type: 'p', text: 'Wij voeren zowel passieve als actieve site surveys uit met professionele meetapparatuur. Na de meting krijgt u een heatmap van uw pand met de aanbevolen AP-plaatsing, kanaalindeling en verwachte capaciteit. Onze engineers installeren vervolgens professionele access points met naadloze roaming, in het merk dat het beste bij uw netwerk past.' },
     ],
   },
   {

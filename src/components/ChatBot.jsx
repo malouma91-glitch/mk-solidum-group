@@ -239,10 +239,10 @@ function buildResponse(intent, _input, ctx) {
     case 'brands':
       return {
         text: pick([
-          `Wij zijn officieel partner van de merken die wij aanraden — bewust. Wij adviseren alleen wat wij zelf ook zouden kopen.\n\nOnze vaste partners:\n• **Ubiquiti** — netwerk, Wi-Fi, straalverbindingen\n• **Extreme Networks** — enterprise switches & routing\n• **Hikvision** — IP-camera's en NVR-systemen\n• **AJAX** — draadloos alarmsysteem\n• **Roger** — toegangscontrole\n• **LogiLink** — passieve bekabeling\n\nEigen voorraad — geen lange levertijden. Storingen lossen wij vaak dezelfde dag op.`,
-          `Goede vraag! Wij kiezen merken op kwaliteit én support — niet op marge. \n\n**Ubiquiti UniFi** voor netwerk en Wi-Fi: uitstekend product, geen dure licenties. **Hikvision** voor camera's: marktleider met reden — betrouwbaar en scherp geprijsd. **Extreme Networks** voor enterprise: carrier-grade kwaliteit.\n\nHeeft u al een voorkeur, of laten wij u adviseren?`,
+          `Wij zijn niet gebonden aan één vaste leverancier. Voor kabels, patchkasten en access points werken wij met verschillende toonaangevende merken — wij kiezen per project wat het beste past bij uw budget, pand en eisen, in plaats van u vast te praten op één merk.\n\nWaar wij wel altijd op letten: kwaliteit, garantie en beschikbaarheid — zodat een storing niet weken op een onderdeel hoeft te wachten. Heeft u zelf al een merkvoorkeur, of laat u zich liever adviseren?`,
+          `Goede vraag! Ons uitgangspunt is: het juiste merk voor de juiste situatie, niet één huismerk voor alles. Voor bekabeling en patchkasten werken wij met meerdere kwaliteitsleveranciers, en voor Wi-Fi en switches kijken wij naar de schaal van uw netwerk — van een compacte kantooroplossing tot een enterprise-omgeving.\n\nZo krijgt u onafhankelijk advies, geen verkooppraatje voor één merk. Wat voor project heeft u in gedachten?`,
         ]),
-        suggestions: ['Ubiquiti UniFi info', 'Hikvision camera\'s', 'Extreme Networks', 'Laat mij adviseren'],
+        suggestions: ['Advies op maat', 'Wat kost het?', 'Offerte aanvragen'],
       }
 
     case 'sector':
@@ -266,16 +266,16 @@ function buildResponse(intent, _input, ctx) {
     case 'managed':
       return {
         text: pick([
-          `Beheerd netwerk — steeds populairder, en begrijpelijk. U wilt gewoon dat het werkt, zonder zelf IT-specialist te zijn.\n\nWij bieden **proactief netwerkbeheer**:\n• Monitoring 24/7 — wij zien een probleem vóórdat u het merkt\n• Remote support — veel problemen oplossen wij op afstand\n• Updates & patches — altijd up-to-date en veilig\n• Maandelijkse rapportage — u weet altijd hoe het ervoor staat\n\nInteressant voor u? Dan kunnen wij een beheercontract op maat samenstellen.`,
-          `Managed services — precies waar steeds meer bedrijven voor kiezen. Zeker als u geen eigen IT-afdeling heeft.\n\nWij nemen het beheer van uw netwerk volledig over: monitoring, updates, storingen afhandelen, documentatie bijhouden. U betaalt een vast maandbedrag en heeft altijd een aanspreekpunt.\n\nWilt u meer weten over wat een beheercontract bij ons inhoudt?`,
+          `Netwerkbeheer — steeds populairder, en begrijpelijk. U wilt gewoon dat het werkt, zonder zelf IT-specialist te zijn. Wij bieden drie niveaus:\n\n• **Basis Onderhoud** — inzetbaar op uurtarief wanneer nodig\n• **Proactief Beheer** (vanaf €99 per maand) — remote monitoring, maandelijkse health-checks, firmware-updates, reactie binnen 1 werkdag\n• **Volledig Ontzorgd met SLA** (op maat, richtprijs vanaf €250 per maand) — 24/7 monitoring, reactietijd binnen 4 uur, kwartaalrapportage\n\nWelk niveau past het beste bij uw situatie?`,
+          `Managed services — precies waar steeds meer bedrijven voor kiezen. Zeker als u geen eigen IT-afdeling heeft.\n\nWij bieden dit gefaseerd aan: van losse uurtjes onderhoud tot een volledig beheercontract met SLA (24/7 monitoring, reactietijd binnen 4 uur, kwartaalrapportage — vanaf €250 per maand, op maat). Daartussenin zit Proactief Beheer vanaf €99 per maand met maandelijkse health-checks en reactie binnen 1 werkdag.\n\nWilt u meer weten over wat een beheercontract bij ons inhoudt?`,
         ]),
-        suggestions: ['Beheercontract bespreken', 'Wat kost dat per maand?', 'Offerte aanvragen'],
+        suggestions: ['Proactief Beheer (v.a. €99/mnd)', 'Volledig Ontzorgd met SLA', 'Offerte aanvragen'],
       }
 
     case 'vpn':
       return {
         text: pick([
-          `VPN en veilig thuiswerken — zeker relevant na de afgelopen jaren! Wij configureren VPN-oplossingen die écht veilig zijn, niet die gratis consumer-apps.\n\nWij werken met **FortiGate** en **Ubiquiti** voor site-to-site VPN en client-VPN. Versleuteld, met tweefactorauthenticatie, en centraal beheerd.\n\nHoeveel medewerkers werken er thuis of op locatie? Dan kan ik inschatten wat de beste oplossing is.`,
+          `VPN en veilig thuiswerken — zeker relevant na de afgelopen jaren! Wij configureren VPN-oplossingen die écht veilig zijn, niet die gratis consumer-apps.\n\nWij kiezen de firewall en VPN-apparatuur die het beste bij uw netwerk past, voor site-to-site VPN en client-VPN. Versleuteld, met tweefactorauthenticatie, en centraal beheerd.\n\nHoeveel medewerkers werken er thuis of op locatie? Dan kan ik inschatten wat de beste oplossing is.`,
           `Veilig thuiswerken of remote access — een must tegenwoordig. Een goede VPN-oplossing zorgt dat uw medewerkers veilig verbinding maken met het bedrijfsnetwerk, alsof ze op kantoor zitten.\n\nWij configureren dit op uw firewall en zorgen voor een gebruiksvriendelijke client-software. Werkt op laptop, tablet en telefoon.\n\nWat is uw huidige situatie — heeft u al een firewall?`,
         ]),
         suggestions: ['VPN opzetten', 'Firewall bespreken', 'Offerte aanvragen'],

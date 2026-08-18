@@ -28,7 +28,7 @@ const faqData = {
     items: [
       { q: 'Wat voor bekabeling installeren jullie?', a: 'Wij installeren gestructureerde bekabeling conform TIA/EIA-568 en ISO 11801. Standaard werken wij met Cat6A (10 Gbps) en glasvezel (single-mode & multi-mode). Elke installatie wordt gecertificeerd opgeleverd met een testrapportage.' },
       { q: 'Wat is een Wi-Fi site survey?', a: 'Een site survey is een professionele meting van uw ruimte om te bepalen waar access points optimaal geplaatst moeten worden. Wij meten signaalsterkte, interferentie en obstakels — zo krijgt u in één keer een dekkend Wi-Fi-netwerk zonder dode zones.' },
-      { q: 'Met welke merken werken jullie?', a: 'Wij zijn officieel partner van Ubiquiti (netwerk & Wi-Fi) en Extreme Networks (enterprise switches). Daarnaast werken wij met FLUKE Networks voor certificering en LogiLink voor bekabeling.' },
+      { q: 'Met welke merken werken jullie?', a: 'Wij zijn niet gebonden aan één vaste leverancier. Voor kabels, patchkasten en access points werken wij met verschillende toonaangevende merken en kiezen wij per project wat het beste past bij uw budget en eisen. Voor certificering van bekabeling gebruiken wij FLUKE Networks meetapparatuur.' },
       { q: 'Bieden jullie ook netwerkbeheer aan?', a: 'Ja, wij bieden proactief netwerkbeheer: 24/7 monitoring, remote support, updates & patches en maandelijkse rapportages. Ideaal als u geen eigen IT-afdeling heeft.' },
     ],
   },
