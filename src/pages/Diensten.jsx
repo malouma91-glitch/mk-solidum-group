@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { divisions } from '../data/services'
 import ContactForm from '../components/ContactForm'
 
-const divColors = { transport: '#10B981', infra: '#2563EB', security: '#EF4444' }
+const divColors = { transport: '#10B981', infra: '#2563EB' }
 
 function DivisionBlock({ division }) {
   const color = divColors[division.id]
@@ -72,7 +72,7 @@ function Diensten() {
           </span>
           <h1 className="text-4xl md:text-5xl font-black font-raleway text-white mb-4">Onze diensten</h1>
           <p className="text-slate-300 max-w-xl leading-relaxed">
-            Drie divisies, zeven diensten. Van medisch transport tot IT-infrastructuur en beveiliging — MK Solidum Group is uw totaalpartner.
+            Twee divisies, zes diensten. Van medisch transport tot IT-infrastructuur en netwerkbeheer — MK Solidum Group is uw totaalpartner.
           </p>
         </div>
       </section>

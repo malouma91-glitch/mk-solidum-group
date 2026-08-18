@@ -6,7 +6,7 @@ import { HeroGeometric } from '../components/ui/shape-landing-hero'
 import ScrollReveal from '../components/ScrollReveal'
 
 /* ── Divisie kleuren ── */
-const divColors = { transport: '#10B981', infra: '#2563EB', security: '#EF4444' }
+const divColors = { transport: '#10B981', infra: '#2563EB' }
 
 /* ── Animated counter hook ── */
 function useCountUp(target, duration = 2000) {
@@ -49,27 +49,23 @@ const stats = [
 const reviews = [
   { name: 'J. van der Meer', company: 'VH Logistics B.V.', stars: 5, text: 'MK Solidum Group heeft ons magazijn voorzien van een compleet netwerk. Professioneel, netjes en precies op tijd opgeleverd. Topwerk!' },
   { name: 'R. Kuiper', company: 'MediFast Apotheek', stars: 5, text: 'Sinds wij samenwerken met MK Transport hoeven wij ons geen zorgen meer te maken over onze medische leveringen. Betrouwbaar en altijd bereikbaar.' },
-  { name: 'D. Hendriks', company: 'SecurePoint BV', stars: 5, text: 'Het camerasysteem dat MK Security heeft geïnstalleerd werkt perfect. AVG-compliant, scherp beeld en uitstekende nazorg. Aanbevolen!' },
   { name: 'M. de Boer', company: 'Kantoor Plus Utrecht', stars: 4, text: 'Goede service, eerlijke prijzen. Wi-Fi werkt eindelijk overal in ons kantoor. Het team is vriendelijk en deskundig.' },
 ]
 
 /* ── Certificerings partners ── */
 const certLogos = [
   { name: 'Ubiquiti', color: '#0559C9' },
-  { name: 'Hikvision', color: '#E31937' },
-  { name: 'AJAX', color: '#000000' },
   { name: 'Extreme Networks', color: '#6E2C91' },
   { name: 'FLUKE', color: '#FFB81C' },
   { name: 'VCA**', color: '#00A651' },
   { name: 'GDP', color: '#2563EB' },
-  { name: 'BORG', color: '#1E3A5F' },
 ]
 
 /* ── USP features ── */
 const features = [
   {
-    title: 'Drie Divisies, Één Partner',
-    desc: 'Transport, IT-infrastructuur en beveiliging — alles onder één dak. Geen gedoe met meerdere leveranciers.',
+    title: 'Twee Divisies, Één Partner',
+    desc: 'Transport en IT-infrastructuur — alles onder één dak. Geen gedoe met meerdere leveranciers.',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -111,9 +107,9 @@ function DivisionsSection() {
       <div className="container-main">
         <div className="text-center mb-14">
           <span className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3 block">Onze Divisies</span>
-          <h2 className="text-3xl md:text-4xl font-black font-raleway text-slate-900 mb-4">Drie pijlers, één groep</h2>
+          <h2 className="text-3xl md:text-4xl font-black font-raleway text-slate-900 mb-4">Twee pijlers, één groep</h2>
           <p className="text-slate-500 max-w-xl mx-auto leading-relaxed">
-            MK Solidum Group bedient u vanuit drie gespecialiseerde divisies. Elk met hun eigen expertise, samen sterk.
+            MK Solidum Group bedient u vanuit twee gespecialiseerde divisies. Elk met hun eigen expertise, samen sterk.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -132,11 +128,6 @@ function DivisionsSection() {
                   {div.id === 'infra' && (
                     <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
-                    </svg>
-                  )}
-                  {div.id === 'security' && (
-                    <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                     </svg>
                   )}
                 </div>
@@ -185,13 +176,13 @@ function AboutSection() {
             <span className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3 block">Over ons</span>
             <h2 className="text-3xl md:text-4xl font-black font-raleway text-slate-900 mb-6 leading-tight">Wie is MK Solidum Group?</h2>
             <p className="text-slate-500 leading-relaxed mb-4">
-              MK Solidum Group B.V. is een dynamische onderneming gevestigd in Bilthoven. Wij zijn gespecialiseerd in drie kerngebieden: medisch transport, IT-infrastructuur en beveiliging.
+              MK Solidum Group B.V. is een dynamische onderneming gevestigd in Bilthoven. Wij zijn gespecialiseerd in twee kerngebieden: medisch transport en IT-infrastructuur.
             </p>
             <p className="text-slate-500 leading-relaxed mb-6">
-              Met onze drie divisies — MK Transport, MK Infra en MK Security — bieden wij een totaaloplossing. Uw project is ons project.
+              Met onze twee divisies — MK Transport en MK Infra — bieden wij een totaaloplossing. Uw project is ons project.
             </p>
             <ul className="space-y-3 mb-8">
-              {['Gecertificeerde vakmensen', 'Drie divisies onder één dak', 'Geen verborgen kosten', 'Doorlopende service en onderhoud'].map((item) => (
+              {['Gecertificeerde vakmensen', 'Twee divisies onder één dak', 'Geen verborgen kosten', 'Doorlopende service en onderhoud'].map((item) => (
                 <li key={item} className="flex items-center gap-3">
                   <span className="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(135deg,#2563EB,#06B6D4)' }}>
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -450,10 +441,10 @@ function PartnerSection() {
               Bent u een installatiebedrijf, aannemer, telecombedrijf of facility manager? MK Solidum Group werkt graag als onderaannemer voor uw projecten.
             </p>
             <p className="text-slate-500 leading-relaxed mb-6">
-              Wij leveren gekwalificeerde datamonteurs, netwerk engineers, chauffeurs en beveiligingsspecialisten. Flexibel, betrouwbaar en met alle benodigde certificeringen.
+              Wij leveren gekwalificeerde datamonteurs, netwerk engineers en chauffeurs — deels via ons vaste netwerk van zzp-specialisten. Flexibel, betrouwbaar en met alle benodigde certificeringen.
             </p>
             <ul className="space-y-3 mb-8">
-              {['Alle certificeringen in huis (VCA**, GDP, BORG)', 'Eigen materiaal en gereedschap', 'Schaalbaar — van 1 monteur tot een compleet team', 'Flexibel inzetbaar — per dag, week of project', 'Ervaring met aanbestedingen en grote opdrachtgevers'].map((item) => (
+              {['Alle certificeringen in huis (VCA**, GDP)', 'Eigen materiaal en gereedschap', 'Schaalbaar — van 1 monteur tot een compleet team', 'Flexibel inzetbaar — per dag, week of project', 'Ervaring met aanbestedingen en grote opdrachtgevers'].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{ background: 'linear-gradient(135deg,#2563EB,#06B6D4)' }}>
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -475,8 +466,8 @@ function PartnerSection() {
               />
             </div>
             <div className="absolute -bottom-4 -left-4 bg-blue-600 rounded-2xl shadow-xl p-5 text-white">
-              <div className="text-2xl font-black mb-0.5">3 Divisies</div>
-              <div className="text-blue-200 text-sm">Transport · Infra · Security</div>
+              <div className="text-2xl font-black mb-0.5">2 Divisies</div>
+              <div className="text-blue-200 text-sm">Transport · Infra</div>
             </div>
           </div>
         </div>
@@ -489,10 +480,10 @@ function Home() {
   return (
     <div>
       <HeroGeometric
-        badge="Transport · Infra · Security"
+        badge="Transport · Infra"
         title1="MK Solidum"
         title2="Group"
-        description="Drie divisies, één partner. Van medisch transport en IT-infrastructuur tot beveiligingsoplossingen — MK Solidum Group ontzorgt u volledig."
+        description="Twee divisies, één partner. Van medisch transport en IT-infrastructuur tot netwerkbeheer — MK Solidum Group ontzorgt u volledig."
         ctaPrimary={{ label: 'Gratis adviesgesprek \u2192', href: '/contact' }}
         ctaSecondary={{ label: 'Onze diensten', href: '/diensten' }}
       />

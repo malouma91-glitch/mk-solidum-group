@@ -3,7 +3,6 @@ import SpoedBanner from './SpoedBanner'
 const usps = [
   { label: 'Transport',  color: '#10B981' },
   { label: 'Infra',      color: '#2563EB' },
-  { label: 'Security',   color: '#EF4444' },
 ]
 
 function TopBar() {

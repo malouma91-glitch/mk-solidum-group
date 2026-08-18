@@ -133,10 +133,10 @@ function buildResponse(intent, _input, ctx) {
     case 'services':
       return {
         text: pick([
-          `Zeker! MK Solidum Group werkt vanuit **drie divisies**:\n\n🚚 **MK Transport**\n• Medische koeriersdiensten\n• Logistiek & distributie\n\n🌐 **MK Infra**\n• Internet bekabeling (CAT6A, glasvezel)\n• Patchkasten & switches\n• Netwerk aanleg (Wi-Fi, VLAN, firewalls)\n\n🎥 **MK Security**\n• IP-camerasystemen (Hikvision)\n• Beveiliging van panden (AJAX, Roger)\n\nWat spreekt u het meeste aan?`,
-          `Goede vraag! Wij werken vanuit drie divisies. **MK Transport** voor medisch vervoer en logistiek, **MK Infra** voor IT-infrastructuur en netwerken, en **MK Security** voor camerabewaking en pandbeveiliging.\n\nElke divisie heeft zijn eigen specialisten. Wat is uw situatie? Dan verwijs ik u naar de juiste afdeling.`,
+          `Zeker! MK Solidum Group werkt vanuit **twee divisies**:\n\n🚚 **MK Transport**\n• Medische koeriersdiensten\n• Logistiek & distributie\n\n🌐 **MK Infra**\n• Internet bekabeling (CAT6A, glasvezel)\n• Patchkasten & switches\n• Netwerk aanleg (Wi-Fi, VLAN, firewalls)\n• Netwerkbeheer (monitoring & onderhoud)\n\nWat spreekt u het meeste aan?`,
+          `Goede vraag! Wij werken vanuit twee divisies. **MK Transport** voor medisch vervoer en logistiek, en **MK Infra** voor IT-infrastructuur, netwerken en netwerkbeheer.\n\nElke divisie heeft zijn eigen specialisten. Wat is uw situatie? Dan verwijs ik u naar de juiste afdeling.`,
         ]),
-        suggestions: ['MK Transport', 'MK Infra', 'MK Security', 'Offerte aanvragen'],
+        suggestions: ['MK Transport', 'MK Infra', 'Offerte aanvragen'],
       }
 
     case 'price':
@@ -187,11 +187,8 @@ function buildResponse(intent, _input, ctx) {
 
     case 'camera':
       return {
-        text: pick([
-          `Camerabeveiliging is een onderwerp dat veel mensen onderschatten — totdat er iets mis gaat. Wij installeren systemen van **Hikvision**: marktleider, scherp beeld dag én nacht, 24/7 bereikbaar via uw telefoon.\n\nWat wij altijd meenemen:\n• **AVG-compliance** — camerabeleid, bordje plaatsing, bewaarbeleid\n• **NVR-opslag** — lokale opslag, geen maandelijkse cloudkosten\n• **Toegangscontrole** — combinatie met AJAX of Roger\n\nGaat het om buiten, binnen, of beide? En hoeveel camera's denkt u nodig te hebben?`,
-          `Goede stap! Camerabewaking werkt preventief én geeft u achteraf bewijs. Wij doen het compleet — camera's, opslag, kabels, montage en de AVG-documentatie.\n\nHikvision is onze vaste partner: geweldig beeld kwaliteit, betrouwbare hardware, betaalbaar. En u kunt alles via de Hik-Connect app op uw telefoon volgen.\n\nWat is de situatie? Bedrijfspand, magazijn of kantoor?`,
-        ]),
-        suggestions: ['Binnen camera\'s', 'Buiten + binnen', 'Hoe zit het met de AVG?'],
+        text: `Beveiligingsdiensten zoals camerasystemen bieden wij op dit moment niet meer aan als aparte divisie — wij richten ons volledig op **MK Transport** (medisch vervoer & logistiek) en **MK Infra** (netwerkaanleg, bekabeling & netwerkbeheer).\n\nKan ik u daar verder mee helpen?`,
+        suggestions: ['MK Transport', 'MK Infra', 'Offerte aanvragen'],
       }
 
     case 'cabling':
@@ -350,7 +347,7 @@ function buildResponse(intent, _input, ctx) {
     case 'partnership':
       return {
         text: pick([
-          `Samenwerken met MK Solidum Group — absoluut een goed idee! 🤝\n\nWij werken op twee manieren samen:\n\n**Als onderaannemer voor u:**\n• Wij voeren uit wat u opdraagt — transport, infra of security\n• Wij werken discreet onder uw vlag als dat gewenst is\n• Vaste prijsafspraken, geen verrassingen\n\n**U besteedt bij ons uit:**\n• Wij nemen een volledige dienst over — van planning tot uitvoering\n• U houdt regie, wij zorgen voor de rest\n\nWat voor samenwerking ziet u voor zich?`,
+          `Samenwerken met MK Solidum Group — absoluut een goed idee! 🤝\n\nWij werken op twee manieren samen:\n\n**Als onderaannemer voor u:**\n• Wij voeren uit wat u opdraagt — transport of infra\n• Wij werken discreet onder uw vlag als dat gewenst is\n• Vaste prijsafspraken, geen verrassingen\n\n**U besteedt bij ons uit:**\n• Wij nemen een volledige dienst over — van planning tot uitvoering\n• U houdt regie, wij zorgen voor de rest\n\nWat voor samenwerking ziet u voor zich?`,
           `Wij werken graag als partner of onderaannemer voor andere bedrijven. Denk aan installatiebureau's, telecombedrijven, aannemers en facility managers die extra capaciteit nodig hebben.\n\nWij zijn flexibel, betrouwbaar en hebben alle certificeringen in huis. U hoeft niet bang te zijn voor kwaliteitsproblemen — wij werken conform uw standaarden.\n\nBent u opdrachtgever die ons wil inhuren, of zoekt u een structurele samenwerking?`,
         ]),
         suggestions: ['Ons inhuren als onderaannemer', 'Dienst uitbesteden', 'Vaste samenwerking bespreken', 'Contact opnemen'],
@@ -359,19 +356,19 @@ function buildResponse(intent, _input, ctx) {
     case 'company':
       return {
         text: pick([
-          `MK Solidum Group B.V. is opgericht op **26 september 2016** — oorspronkelijk als Kali Transport V.O.F. en sindsdien uitgegroeid tot een volwaardige multi-divisie groep.\n\nWat wij doen:\n🚚 **MK Transport** — medisch transport & logistiek\n🌐 **MK Infra** — IT-infrastructuur & netwerken\n🔐 **MK Security** — camerabewaking & pandbeveiliging\n\nKantoor: **Bilthoven (Utrecht)** — maar wij werken door heel Nederland. Eén partner voor drie vakgebieden — dat is onze kracht.`,
-          `MK Solidum Group bestaat al since 2016 en heeft zich ontwikkeld van een transportbedrijf naar een volledige dienstverlener op het gebied van transport, IT-infrastructuur en beveiliging.\n\nWij geloven in één aanspreekpunt voor meerdere behoeften. Geen losse leveranciers, geen miscommunicatie — gewoon één partij die alles regelt.\n\nKvK-nummer: **66920280** | Gevestigd in **Bilthoven**\n\nWat wilt u van ons weten?`,
+          `MK Solidum Group B.V. is opgericht op **26 september 2016** — oorspronkelijk als Kali Transport V.O.F. en sindsdien uitgegroeid tot een volwaardige multi-divisie groep.\n\nWat wij doen:\n🚚 **MK Transport** — medisch transport & logistiek\n🌐 **MK Infra** — IT-infrastructuur & netwerken\n\nKantoor: **Bilthoven (Utrecht)** — maar wij werken door heel Nederland. Eén partner voor twee vakgebieden — dat is onze kracht.`,
+          `MK Solidum Group bestaat al since 2016 en heeft zich ontwikkeld van een transportbedrijf naar een volledige dienstverlener op het gebied van transport en IT-infrastructuur.\n\nWij geloven in één aanspreekpunt voor meerdere behoeften. Geen losse leveranciers, geen miscommunicatie — gewoon één partij die alles regelt.\n\nKvK-nummer: **66920280** | Gevestigd in **Bilthoven**\n\nWat wilt u van ons weten?`,
         ]),
-        suggestions: ['Onze drie divisies', 'Ons team', 'Offerte aanvragen', 'Contact opnemen'],
+        suggestions: ['Onze divisies', 'Ons team', 'Offerte aanvragen', 'Contact opnemen'],
       }
 
     case 'team':
       return {
         text: pick([
-          `Achter MK Solidum Group staan twee eigenaren:\n\n👤 **Mohammed Alou** — Eigenaar & Directeur\nSpecialist in data, netwerken en beveiliging. Verantwoordelijk voor **MK Infra** en **MK Security** — van bekabeling en netwerk aanleg tot camerasystemen en toegangscontrole. VCA VOL gecertificeerd.\n\n👤 **Karim Charradi** — Eigenaar & Directeur\nDe specialist in transport, warehouse en logistiek. Uw aanspreekpunt voor alles binnen **MK Transport** — medische routes, distributie en magazijncoördinatie. VCA VOL gecertificeerd.\n\nSamen een combinatie van technische kennis én operationele expertise. U praat altijd met iemand die het vak door en door kent.`,
-          `MK Solidum Group wordt geleid door twee eigenaren die elk hun eigen vakgebied hebben:\n\n**Mohammed Alou** — data monteur, netwerken & beveiliging (MK Infra + MK Security)\n**Karim Charradi** — transport, logistiek & warehouse (MK Transport)\n\nBeide heren zijn **VCA VOL gecertificeerd** en dagelijks actief in het veld. Geen managers achter een bureau — mensen die het werk zelf kennen.\n\nVraag over transport of logistiek? Dan is Karim uw man. IT-infrastructuur of beveiliging? Dan is Mohammed uw aanspreekpunt. Wie heeft u nodig?`,
+          `Achter MK Solidum Group staan twee eigenaren, ondersteund door een vast netwerk van zzp-specialisten voor de uitvoering:\n\n👤 **Mohammed Alou** — Eigenaar & Directeur\nSpecialist in data en netwerken. Verantwoordelijk voor **MK Infra** — van bekabeling en netwerk aanleg tot netwerkbeheer. VCA VOL gecertificeerd.\n\n👤 **Karim Charradi** — Eigenaar & Directeur\nDe specialist in transport, warehouse en logistiek. Uw aanspreekpunt voor alles binnen **MK Transport** — medische routes, distributie en magazijncoördinatie. VCA VOL gecertificeerd.\n\nDe uitvoering op de weg, de werkvloer en straks ook in het veld bij data-projecten gebeurt door zelfstandige zzp-specialisten die wij structureel inhuren — op projectbasis en uurtarief, met eigen planning en materiaal.\n\nSamen een combinatie van technische kennis én operationele expertise. U praat altijd met iemand die het vak door en door kent.`,
+          `MK Solidum Group wordt geleid door twee eigenaren die elk hun eigen vakgebied hebben:\n\n**Mohammed Alou** — data monteur & netwerken (MK Infra)\n**Karim Charradi** — transport, logistiek & warehouse (MK Transport)\n\nBeide heren zijn **VCA VOL gecertificeerd** en dagelijks actief in het veld. Voor de uitvoering werken wij daarnaast met een vast netwerk van zzp-chauffeurs, warehouse-coördinatoren en (binnenkort) data-specialisten.\n\nVraag over transport of logistiek? Dan is Karim uw man. IT-infrastructuur? Dan is Mohammed uw aanspreekpunt. Wie heeft u nodig?`,
         ]),
-        suggestions: ['Transport / logistiek → Karim', 'Infra / security → Mohammed', 'Offerte aanvragen'],
+        suggestions: ['Transport / logistiek → Karim', 'IT-infrastructuur → Mohammed', 'Offerte aanvragen'],
       }
 
     case 'opening_hours':
@@ -399,28 +396,17 @@ function buildResponse(intent, _input, ctx) {
       }
 
     case 'alarm':
-      return {
-        text: pick([
-          `Alarmsystemen — één van onze MK Security specialiteiten! Wij werken met **AJAX Systems**: het modernste draadloze alarmsysteem op de markt.\n\nWaarom AJAX?\n• **Volledig draadloos** — geen kabelbreuk, snelle installatie\n• **GSM + WiFi + Ethernet** — drie communicatiemiddelen tegelijk\n• **Real-time meldingen** op uw telefoon\n• **Sabotagedetectie** — wordt er aan de behuizing gerommeld? Direct alarm\n• **Accu-backup** — ook bij stroomuitval actief\n\nWij koppelen het alarmsysteem desgewenst ook aan een **particulier beveiligingsbedrijf** voor actieve bewaking. Gaat het om een klein pand of een groter complex?`,
-          `Inbraakdetectie met AJAX — wij installeren dit regelmatig voor kantoren, magazijnen en winkels.\n\nHet mooie van AJAX: de app geeft u **real-time inzicht** in wat er in uw pand gebeurt. Beweging gedetecteerd? Deur open? U krijgt direct een melding — waar u ook bent.\n\nWij adviseren altijd een combinatie: **alarm + camera + toegangscontrole**. Dan heeft u een volledig beeld én bewijs bij een incident.\n\nWat is uw situatie — alleen alarm, of een compleet pakket?`,
-        ]),
-        suggestions: ['AJAX alarmsysteem info', 'Compleet beveiligingspakket', 'Offerte beveiliging'],
-      }
-
     case 'access_control':
       return {
-        text: pick([
-          `Toegangscontrole — essentieel als u wilt bepalen wie wanneer waar mag zijn. Wij werken met **Roger** en **AJAX**:\n\n🔑 **Roger** — voor grotere installaties met veel deuren en gebruikers\n• Kaartlezers, PIN-pads, biometrisch\n• Centraal beheer via software\n• Tijdzonebeheer — wie mag wanneer welke deur openen\n• Koppeling met HR-systemen mogelijk\n\n🔒 **AJAX** — voor kleinere installaties of als aanvulling op het alarmsysteem\n• Smart locks en magneetsloten\n• Beheer via app\n\nBij hoeveel deuren en hoeveel gebruikers denkt u? Dan geef ik u een richting.`,
-          `Toegangscontrole is meer dan een sleutel vervangen door een pas. Het gaat om **weten wie er is, wanneer, en waar**.\n\nWij installeren complete toegangscontrolesystemen van Roger — van één deur tot een complex met honderden deuren en medewerkers. Inclusief:\n• Personeelsbeheer (wie heeft toegang tot welke zone)\n• Tijdregistratie (optioneel)\n• Koppeling met NVR/camerasysteem\n• AVG-conform\n\nGaat het om uw hoofdingang, een serverruimte, of het hele pand?`,
-        ]),
-        suggestions: ['Roger toegangscontrole', 'Combinatie alarm + toegang', 'Offerte aanvragen'],
+        text: `Alarmsystemen en toegangscontrole bieden wij op dit moment niet meer aan als aparte divisie — wij richten ons volledig op **MK Transport** (medisch vervoer & logistiek) en **MK Infra** (netwerkaanleg, bekabeling & netwerkbeheer).\n\nKan ik u daar verder mee helpen?`,
+        suggestions: ['MK Transport', 'MK Infra', 'Offerte aanvragen'],
       }
 
     case 'emergency':
       return {
         text: pick([
-          `Spoed? Geen probleem — wij zijn er voor u! 🚨\n\nBel ons **direct** op **06 148 909 15** — ook buiten kantooruren voor urgente gevallen.\n\nVoor **medisch transport** (spoedritten, tijdkritische monsters): wij zijn dag en nacht bereikbaar.\n\nVoor **IT-storingen** (netwerk plat, camera's offline): wij proberen dezelfde dag te komen.\n\nVoor **beveiligingsstoringen** (alarm, toegangscontrole): we behandelen dit als prioriteit.\n\nBel direct — dan regelen wij de rest. 📞`,
-          `Urgent? Bel ons meteen: **06 148 909 15** 📞\n\nWij begrijpen dat sommige situaties niet kunnen wachten. Medische transporten, netwerkstoringen, beveiligingsincidenten — wij behandelen spoedgevallen altijd met prioriteit.\n\nKunt u kort beschrijven wat er speelt? Dan schakel ik direct de juiste persoon in.`,
+          `Spoed? Geen probleem — wij zijn er voor u! 🚨\n\nBel ons **direct** op **06 148 909 15** — ook buiten kantooruren voor urgente gevallen.\n\nVoor **medisch transport** (spoedritten, tijdkritische monsters): wij zijn dag en nacht bereikbaar.\n\nVoor **IT-storingen** (netwerk plat): wij proberen dezelfde dag te komen.\n\nBel direct — dan regelen wij de rest. 📞`,
+          `Urgent? Bel ons meteen: **06 148 909 15** 📞\n\nWij begrijpen dat sommige situaties niet kunnen wachten. Medische transporten en netwerkstoringen behandelen wij altijd met prioriteit.\n\nKunt u kort beschrijven wat er speelt? Dan schakel ik direct de juiste persoon in.`,
         ]),
         suggestions: ['06 148 909 15 bellen', 'mkgroup@mksolidumgroup.nl', 'Terugbelverzoek spoed'],
       }
@@ -428,8 +414,8 @@ function buildResponse(intent, _input, ctx) {
     case 'certification':
       return {
         text: pick([
-          `Certificeringen zijn voor ons geen papierwerk — het is een garantie voor u. Dit hebben wij in huis:\n\n🦺 **VCA VOL** — Veiligheid, Gezondheid en Milieu Checklist Aannemers (Volledig)\nBeide eigenaren zijn VCA VOL gecertificeerd. Verplicht voor veel opdrachtgevers in de bouw, industrie en infra.\n\n🏅 **GDP-certificering** (Good Distribution Practice)\nVerplicht voor medisch en farmaceutisch transport. Onze chauffeurs zijn allen gecertificeerd.\n\n📐 **TIA/EIA-568 & ISO 11801**\nInternationale normen voor gestructureerde bekabeling. Wij meten en certificeren élke verbinding na installatie.\n\n📄 **Testrapportage**\nBij elke bekabelingsinstallatie ontvangt u een volledig testrapport — 25 jaar garantie op de bekabelingsprestaties.\n\n🔒 **AVG-compliance (GDPR)**\nBij camerasystemen leveren wij standaard het volledige AVG-pakket mee.\n\nHeeft u een specifiek certificaat nodig voor uw aanbesteding of inkoop?`,
-          `Goede vraag — certificeringen zijn ons bewijs van kwaliteit.\n\n• **VCA VOL** — veiligheid op de werkvloer ✅\n• **GDP** — medisch transport ✅\n• **TIA-568 / ISO 11801** — bekabeling ✅\n• **AVG-compliance** — camerabeveiliging ✅\n• Gecertificeerde testrapportages bij elke oplevering ✅\n\nVoor aanbestedingen en inkoopafdelingen kunnen wij alle relevante documenten aanleveren. Wat heeft u nodig?`,
+          `Certificeringen zijn voor ons geen papierwerk — het is een garantie voor u. Dit hebben wij in huis:\n\n🦺 **VCA VOL** — Veiligheid, Gezondheid en Milieu Checklist Aannemers (Volledig)\nBeide eigenaren zijn VCA VOL gecertificeerd. Verplicht voor veel opdrachtgevers in de bouw, industrie en infra.\n\n🏅 **GDP-certificering** (Good Distribution Practice)\nVerplicht voor medisch en farmaceutisch transport. Onze chauffeurs zijn allen gecertificeerd.\n\n📐 **TIA/EIA-568 & ISO 11801**\nInternationale normen voor gestructureerde bekabeling. Wij meten en certificeren élke verbinding na installatie.\n\n📄 **Testrapportage**\nBij elke bekabelingsinstallatie ontvangt u een volledig testrapport — 25 jaar garantie op de bekabelingsprestaties.\n\nHeeft u een specifiek certificaat nodig voor uw aanbesteding of inkoop?`,
+          `Goede vraag — certificeringen zijn ons bewijs van kwaliteit.\n\n• **VCA VOL** — veiligheid op de werkvloer ✅\n• **GDP** — medisch transport ✅\n• **TIA-568 / ISO 11801** — bekabeling ✅\n• Gecertificeerde testrapportages bij elke oplevering ✅\n\nVoor aanbestedingen en inkoopafdelingen kunnen wij alle relevante documenten aanleveren. Wat heeft u nodig?`,
         ]),
         suggestions: ['GDP-certificaat opvragen', 'Testrapportage info', 'Offerte aanvragen'],
       }
@@ -512,7 +498,7 @@ export default function ChatBot() {
     {
       id: 1,
       from: 'bot',
-      text: `Hallo! 👋 U spreekt met **Daan van den Berg**, adviseur bij MK Solidum Group. Fijn dat u contact opneemt!\n\nWij helpen u met **transport**, **IT-infrastructuur** en **beveiliging**. Waarmee kan ik u vandaag helpen?`,
+      text: `Hallo! 👋 U spreekt met **Daan van den Berg**, adviseur bij MK Solidum Group. Fijn dat u contact opneemt!\n\nWij helpen u met **transport** en **IT-infrastructuur**. Waarmee kan ik u vandaag helpen?`,
       suggestions: ['Welke divisies hebben jullie?', 'Ik wil een offerte', 'Wat zijn de kosten?'],
       time: new Date(),
     },

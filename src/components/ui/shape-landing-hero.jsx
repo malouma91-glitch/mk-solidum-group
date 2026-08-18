@@ -97,7 +97,7 @@ function HeroGeometric({
   badge = "IT Infrastructuur Specialist",
   title1 = "Toekomstbestendige",
   title2 = "IT-Infrastructuur",
-  description = "MK Solidum Group — drie divisies, één partner. Transport, IT-infrastructuur en beveiliging. Wij ontzorgen u volledig.",
+  description = "MK Solidum Group — twee divisies, één partner. Transport en IT-infrastructuur. Wij ontzorgen u volledig.",
   ctaPrimary = { label: "Vrijblijvend gesprek →", href: "/contact" },
   ctaSecondary = { label: "Onze diensten", href: "/diensten" },
 }) {

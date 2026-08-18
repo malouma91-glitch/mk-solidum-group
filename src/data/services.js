@@ -71,32 +71,6 @@ export const divisions = [
       },
     ],
   },
-  {
-    id: 'security',
-    name: 'MK Security',
-    tagline: 'Uw veiligheid, onze prioriteit',
-    color: '#EF4444',
-    icon: 'shield',
-    description: 'Professionele beveiligingsoplossingen voor uw bedrijfspand. IP-camerasystemen, toegangscontrole en 24/7 monitoring.',
-    services: [
-      {
-        id: 6,
-        title: 'Camerasystemen',
-        shortDesc: 'IP-camerasystemen van Hikvision voor optimale beveiliging. Dag en nacht helder beeld, toegankelijk via uw telefoon.',
-        longDesc: 'MK Security levert en installeert professionele IP-camerasystemen van Hikvision. Van adviesgesprek tot montage, configuratie en oplevering — wij ontzorgen u volledig. Inclusief NVR-opslag, AVG-compliance documentatie en de mogelijkheid om alles via de Hik-Connect app op uw telefoon te volgen.',
-        image: '/images/camerasystemen.png',
-        slug: 'camerasystemen',
-      },
-      {
-        id: 7,
-        title: 'Beveiliging van Panden',
-        shortDesc: 'Toegangscontrole, alarmsystemen en beveiligingsadvies voor uw bedrijfspand. AJAX en Roger systemen.',
-        longDesc: 'De veiligheid van uw pand en medewerkers staat voorop. MK Security levert complete beveiligingsoplossingen: toegangscontrolesystemen (Roger, AJAX), inbraakdetectie, alarmsystemen en beveiligingsadvies. Wij combineren fysieke beveiliging met slimme technologie voor maximale bescherming.',
-        image: '/images/beveiliging-panden.png',
-        slug: 'beveiliging-panden',
-      },
-    ],
-  },
 ]
 
 /* Flat list van alle services (voor backward compatibility) */

@@ -31,7 +31,7 @@ function WieZijnWij() {
             <Link to="/" className="hover:text-white transition-colors">Home</Link> / Over ons
           </span>
           <h1 className="text-4xl md:text-5xl font-black font-raleway text-white mb-4">Wie zijn wij?</h1>
-          <p className="text-slate-300 max-w-lg">Maak kennis met MK Solidum Group — uw partner in transport, IT-infrastructuur en beveiliging.</p>
+          <p className="text-slate-300 max-w-lg">Maak kennis met MK Solidum Group — uw partner in transport en IT-infrastructuur.</p>
         </div>
       </section>
 
@@ -42,13 +42,13 @@ function WieZijnWij() {
             <div>
               <span className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3 block">Over ons</span>
               <h2 className="text-3xl font-black font-raleway text-slate-900 mb-6 leading-tight">
-                Drie divisies, één betrouwbare partner
+                Twee divisies, één betrouwbare partner
               </h2>
               <p className="text-slate-500 leading-relaxed mb-4">
-                MK Solidum Group B.V. is opgericht in 2016 en gevestigd in Bilthoven. Wat begon als een koeriersdienst is uitgegroeid tot een multidisciplinaire groep met drie gespecialiseerde divisies.
+                MK Solidum Group B.V. is opgericht in 2016 en gevestigd in Bilthoven. Wat begon als een koeriersdienst is uitgegroeid tot een groep met twee gespecialiseerde divisies.
               </p>
               <p className="text-slate-500 leading-relaxed mb-4">
-                <strong className="text-slate-700">MK Transport</strong> verzorgt medische koeriers- en logistieke diensten door heel Nederland. <strong className="text-slate-700">MK Infra</strong> is gespecialiseerd in internet bekabeling, patchkasten en netwerk aanleg. <strong className="text-slate-700">MK Security</strong> levert professionele camerasystemen en pandbeveiliging.
+                <strong className="text-slate-700">MK Transport</strong> verzorgt medische koeriers- en logistieke diensten door heel Nederland. <strong className="text-slate-700">MK Infra</strong> is gespecialiseerd in internet bekabeling, patchkasten, netwerk aanleg en netwerkbeheer.
               </p>
               <p className="text-slate-500 leading-relaxed mb-8">
                 Bij MK Solidum Group staat de klant centraal. Wij luisteren naar uw wensen en vertalen die naar concrete, passende oplossingen. Wij werken niet voor u, maar met u.
@@ -89,9 +89,9 @@ function WieZijnWij() {
         <div className="container-main">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { v: '3', l: 'Divisies' },
+              { v: '2', l: 'Divisies' },
               { v: '2016', l: 'Opgericht' },
-              { v: '7+', l: 'Diensten' },
+              { v: '6+', l: 'Diensten' },
               { v: '24/7', l: 'Bereikbaar' },
             ].map((s) => (
               <div key={s.l}>
@@ -132,7 +132,7 @@ function WieZijnWij() {
             <span className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3 block">Leiderschap</span>
             <h2 className="text-3xl font-black font-raleway text-slate-900 mb-4">De oprichters achter MK Solidum Group</h2>
             <p className="text-slate-500 max-w-xl mx-auto">
-              MK Solidum Group is opgericht door twee gedreven ondernemers die samen de expertise hebben om transport, infra én security onder één dak te bieden.
+              MK Solidum Group is opgericht door twee gedreven ondernemers die samen de expertise hebben om transport en IT-infrastructuur onder één dak te bieden.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-10 mb-24">
@@ -167,10 +167,10 @@ function WieZijnWij() {
           </div>
 
           <div className="text-center mb-14">
-            <span className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3 block">Ons team</span>
-            <h2 className="text-3xl font-black font-raleway text-slate-900 mb-4">Maak kennis met onze professionals</h2>
+            <span className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3 block">Hoe wij werken</span>
+            <h2 className="text-3xl font-black font-raleway text-slate-900 mb-4">Een hecht kernteam, versterkt met specialisten</h2>
             <p className="text-slate-500 max-w-xl mx-auto">
-              Ons team bestaat uit gecertificeerde vakmensen — elk specialist in hun vakgebied en divisie.
+              Mohammed en Karim staan zelf aan het roer. Voor de uitvoering op de weg, de werkvloer en straks ook in het veld bij data-projecten werken wij met een vast netwerk van zelfstandige zzp-specialisten — mensen die hun eigen dagen en uren plannen, met eigen materiaal werken, en op projectbasis in combinatie met een uurtarief worden ingezet.
             </p>
           </div>
 
@@ -183,38 +183,14 @@ function WieZijnWij() {
                 <div className="flex-1 h-px bg-slate-200 ml-2" />
               </div>
 
-              {/* Teamleden */}
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                {division.members.map((member) => (
-                  <div key={member.name} className="bg-white rounded-2xl border border-slate-200 shadow-card hover:shadow-card-hover hover:border-blue-200 transition-all duration-300 overflow-hidden flex flex-col md:flex-row">
-                    <div className="w-full aspect-square md:w-44 md:aspect-auto md:h-full shrink-0 overflow-hidden">
-                      <img
-                        src={member.photo}
-                        alt={member.name}
-                        className="w-full h-full object-cover object-top"
-                      />
-                    </div>
-                    <div className="p-6 flex flex-col justify-between">
-                      <div>
-                        <p className="font-black text-slate-900 text-lg leading-tight">{member.name}</p>
-                        <p className="text-sm font-semibold mb-3" style={{ color: division.color }}>{member.role}</p>
-                        <p className="text-slate-500 text-sm leading-relaxed mb-4">{member.bio}</p>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        {member.specialisaties.map((s) => (
-                          <span key={s} className="text-xs px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 font-medium">
-                            {s}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                ))}
+              {/* Werkwijze */}
+              <div className="bg-white rounded-2xl border border-slate-200 shadow-card p-6 mb-8">
+                <p className="text-slate-600 text-sm leading-relaxed">{division.workforce}</p>
               </div>
 
               {/* Certificeringen */}
               <div className="bg-slate-50 rounded-xl border border-slate-200 p-5">
-                <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Certificeringen {division.division}</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Certificeringen & normen {division.division}</p>
                 <div className="flex flex-wrap gap-2">
                   {division.certifications.map((cert) => (
                     <span key={cert} className="text-xs px-3 py-1.5 rounded-full font-semibold text-white" style={{ background: division.color }}>

@@ -6,10 +6,10 @@ const faqData = {
     label: 'Algemeen',
     color: '#2563EB',
     items: [
-      { q: 'Wat doet MK Solidum Group?', a: 'MK Solidum Group is actief vanuit drie divisies: MK Transport (medisch vervoer & logistiek), MK Infra (netwerken, bekabeling & glasvezel) en MK Security (camerasystemen & toegangscontrole). Wij bieden een totaaloplossing voor bedrijven die op zoek zijn naar een betrouwbare partner.' },
+      { q: 'Wat doet MK Solidum Group?', a: 'MK Solidum Group is actief vanuit twee divisies: MK Transport (medisch vervoer & logistiek) en MK Infra (netwerken, bekabeling, glasvezel & netwerkbeheer). Wij bieden een totaaloplossing voor bedrijven die op zoek zijn naar een betrouwbare partner.' },
       { q: 'Waar zijn jullie gevestigd?', a: 'Ons kantoor is gevestigd in Bilthoven (gemeente De Bilt), nabij Utrecht. Wij werken door heel Nederland, met focus op de Randstad en Brabant.' },
       { q: 'Hoeveel kost een project?', a: 'Elk project is maatwerk — daarom geven wij altijd een vrijblijvende offerte na een inventarisatie. Kleine installaties starten vanaf enkele honderden euro\'s, grotere projecten lopen op tot tienduizenden euro\'s. Wij zijn altijd transparant over onze tarieven.' },
-      { q: 'Werken jullie ook als onderaannemer?', a: 'Ja! Wij werken regelmatig als onderaannemer voor aannemers, installatiebureau\'s, telecombedrijven en facility managers. Wij leveren gekwalificeerde datamonteurs, chauffeurs en beveiligingsspecialisten met alle certificeringen.' },
+      { q: 'Werken jullie ook als onderaannemer?', a: 'Ja! Wij werken regelmatig als onderaannemer voor aannemers, installatiebureau\'s, telecombedrijven en facility managers. Wij leveren gekwalificeerde datamonteurs en chauffeurs met alle certificeringen.' },
       { q: 'Hoe snel kunnen jullie starten?', a: 'Voor kleine projecten kunnen wij vaak binnen een week starten. Grotere projecten plannen wij zorgvuldig in overleg. Bij storingen en spoed reageren wij dezelfde dag.' },
     ],
   },
@@ -28,17 +28,8 @@ const faqData = {
     items: [
       { q: 'Wat voor bekabeling installeren jullie?', a: 'Wij installeren gestructureerde bekabeling conform TIA/EIA-568 en ISO 11801. Standaard werken wij met Cat6A (10 Gbps) en glasvezel (single-mode & multi-mode). Elke installatie wordt gecertificeerd opgeleverd met een testrapportage.' },
       { q: 'Wat is een Wi-Fi site survey?', a: 'Een site survey is een professionele meting van uw ruimte om te bepalen waar access points optimaal geplaatst moeten worden. Wij meten signaalsterkte, interferentie en obstakels — zo krijgt u in één keer een dekkend Wi-Fi-netwerk zonder dode zones.' },
-      { q: 'Met welke merken werken jullie?', a: 'Wij zijn officieel partner van Ubiquiti (netwerk & Wi-Fi), Extreme Networks (enterprise switches), Hikvision (camera\'s) en AJAX (alarmsystemen). Daarnaast werken wij met FLUKE Networks voor certificering en LogiLink voor bekabeling.' },
+      { q: 'Met welke merken werken jullie?', a: 'Wij zijn officieel partner van Ubiquiti (netwerk & Wi-Fi) en Extreme Networks (enterprise switches). Daarnaast werken wij met FLUKE Networks voor certificering en LogiLink voor bekabeling.' },
       { q: 'Bieden jullie ook netwerkbeheer aan?', a: 'Ja, wij bieden proactief netwerkbeheer: 24/7 monitoring, remote support, updates & patches en maandelijkse rapportages. Ideaal als u geen eigen IT-afdeling heeft.' },
-    ],
-  },
-  security: {
-    label: 'MK Security',
-    color: '#EF4444',
-    items: [
-      { q: 'Zijn jullie camerasystemen AVG-compliant?', a: 'Absoluut. Wij leveren bij elke installatie een compleet AVG/GDPR-pakket: camerabeleid, waarschuwingsborden, bewaartermijnen en gebruikersdocumentatie. U voldoet direct aan alle wettelijke eisen.' },
-      { q: 'Kan ik mijn camera\'s op mijn telefoon bekijken?', a: 'Ja! Via de Hik-Connect app van Hikvision kunt u uw camera\'s 24/7 live bekijken op uw smartphone, tablet of laptop. Veilig, versleuteld en gebruiksvriendelijk.' },
-      { q: 'Welke alarmsystemen installeren jullie?', a: 'Wij werken met AJAX — het toonaangevende draadloze beveiligingssysteem. AJAX biedt betrouwbare inbraakdetectie, brandmelding en waterlekkagedetectie, volledig beheerbaar via de app.' },
     ],
   },
 }

@@ -53,7 +53,7 @@ function Contact() {
                 Hoe kunt u ons bereiken?
               </h2>
               <p className="text-slate-500 leading-relaxed mb-8">
-                MK Solidum Group bedient u vanuit drie divisies: MK Transport, MK Infra en MK Security. Of het nu gaat om medisch vervoer, netwerk aanleg of camerabewaking — wij helpen u graag.
+                MK Solidum Group bedient u vanuit twee divisies: MK Transport en MK Infra. Of het nu gaat om medisch vervoer, netwerk aanleg of netwerkbeheer — wij helpen u graag.
               </p>
 
               <div className="space-y-4 mb-10">
@@ -78,7 +78,7 @@ function Contact() {
               <div className="bg-gradient-to-br from-slate-900 to-navy-800 rounded-2xl p-6" style={{ background: 'linear-gradient(135deg,#0A1628,#0F2044)' }}>
                 <div className="text-3xl font-black text-blue-400 leading-none mb-3">&ldquo;</div>
                 <p className="text-slate-300 text-sm leading-relaxed italic">
-                  MK Solidum Group — drie divisies, één betrouwbare partner. Onze kracht ligt in het volledig ontzorgen van onze klanten.
+                  MK Solidum Group — twee divisies, één betrouwbare partner. Onze kracht ligt in het volledig ontzorgen van onze klanten.
                 </p>
                 <div className="mt-4 flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0"

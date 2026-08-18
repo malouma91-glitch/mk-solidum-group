@@ -40,23 +40,6 @@ const articles = [
     ],
   },
   {
-    id: 'camerasysteem-avg',
-    title: 'Camerabewaking en de AVG — Waar moet u op letten?',
-    category: 'Security',
-    color: '#EF4444',
-    readTime: '6 min',
-    image: '/images/kennisbank/camera-avg.jpg',
-    intro: 'Een camerasysteem installeren is technisch eenvoudig. Maar voldoen aan de AVG/GDPR-wetgeving? Daar gaat het vaak mis.',
-    content: [
-      { type: 'h2', text: 'De AVG en cameratoezicht' },
-      { type: 'p', text: 'De Algemene Verordening Gegevensbescherming (AVG/GDPR) stelt strenge eisen aan het gebruik van camerabewaking. Camera\'s registreren persoonsgegevens (beelden), en daar zijn regels aan verbonden.' },
-      { type: 'h2', text: 'Wat moet u regelen?' },
-      { type: 'p', text: '1. Gerechtvaardigd belang — U moet een goede reden hebben (beveiliging, diefstalpreventie). 2. Informatieplicht — Duidelijke bordjes bij de ingang. 3. Bewaartermijn — Beelden maximaal 4 weken bewaren. 4. Toegangsbeleid — Alleen geautoriseerde personen mogen beelden bekijken. 5. DPIA — Bij grootschalige bewaking is een Data Protection Impact Assessment verplicht.' },
-      { type: 'h2', text: 'Hoe helpt MK Security?' },
-      { type: 'p', text: 'Wij leveren bij elke installatie een compleet AVG-pakket: camerabeleid document, waarschuwingsborden, bewaartermijn configuratie in de NVR en een gebruikershandleiding. Zo voldoet u direct aan de wet — zonder zelf alles uit te hoeven zoeken.' },
-    ],
-  },
-  {
     id: 'wifi-site-survey',
     title: 'Wat is een Wi-Fi site survey en waarom heeft u het nodig?',
     category: 'Infra',
@@ -306,13 +289,13 @@ function Kennisbank() {
             </span>
           </h1>
           <p className="text-slate-400 max-w-lg mx-auto leading-relaxed">
-            Artikelen, tips en inzichten over transport, IT-infrastructuur en beveiliging. Geschreven door onze specialisten.
+            Artikelen, tips en inzichten over transport en IT-infrastructuur. Geschreven door onze specialisten.
           </p>
           {/* Stats */}
           <div className="flex justify-center gap-8 mt-10">
             {[
-              { val: '6', label: 'Artikelen' },
-              { val: '3', label: 'Divisies' },
+              { val: '5', label: 'Artikelen' },
+              { val: '2', label: 'Divisies' },
               { val: '1', label: 'Video' },
             ].map((s) => (
               <div key={s.label} className="text-center">

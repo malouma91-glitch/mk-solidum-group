@@ -20,15 +20,6 @@ const projects = [
     result: '100% leverbetrouwbaarheid in het eerste kwartaal. Nul afwijkingen bij GDP-audit.',
   },
   {
-    title: 'Camerabewaking Bedrijventerrein',
-    client: 'Vastgoedbeheerder — Brabant',
-    division: 'MK Security',
-    color: '#EF4444',
-    image: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80',
-    scope: ['32 Hikvision IP-camera\'s (4K)', 'NVR met 30 dagen opslag', 'AVG-compliant camerabeleid', 'Nachtdetectie & motion alerts'],
-    result: 'Binnen 1 maand 40% minder incidenten. Volledig remote toegankelijk via Hik-Connect app.',
-  },
-  {
     title: 'Wi-Fi Upgrade Kantoorcomplex',
     client: 'Accountantskantoor — Utrecht',
     division: 'MK Infra',
@@ -45,15 +36,6 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80',
     scope: ['2 warehouse coördinatoren geplaatst', 'Picking & packing optimalisatie', 'WMS-integratie en training', 'Flexibele opschaling piekmomenten'],
     result: 'Orderverwerkingstijd met 35% verkort. Foutpercentage gedaald van 2.1% naar 0.3%.',
-  },
-  {
-    title: 'Toegangscontrole & Alarm Fabriekspand',
-    client: 'Productiebedrijf — Eindhoven',
-    division: 'MK Security',
-    color: '#EF4444',
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80',
-    scope: ['AJAX alarmsysteem (65 zones)', 'Roger toegangscontrole (8 deuren)', '12 Hikvision camera\'s', 'Brandmelding & waterlekkage detectie'],
-    result: 'Pand volledig beveiligd. Geen ongeautoriseerde toegang sinds installatie. 24/7 monitoring via app.',
   },
 ]
 
