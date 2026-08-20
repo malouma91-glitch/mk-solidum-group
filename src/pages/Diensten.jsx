@@ -26,14 +26,21 @@ function DivisionBlock({ division }) {
             return (
               <div key={service.id} className={`grid md:grid-cols-2 gap-14 items-center`}>
                 <div className={isEven ? '' : 'md:order-2'}>
-                  <div className="rounded-2xl overflow-hidden shadow-xl h-72 relative">
+                  <div className="rounded-2xl overflow-hidden shadow-xl h-[26rem] relative bg-slate-900">
+                    {/* Blurred fill zodat staande foto's niet bijgesneden hoeven te worden */}
+                    <img
+                      src={service.image}
+                      alt=""
+                      aria-hidden="true"
+                      className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-40"
+                    />
                     <img
                       src={service.image}
                       alt={service.title}
-                      className="w-full h-full object-cover"
-                      style={{ objectPosition: service.imagePosition === 'top' ? 'center top' : 'center' }}
+                      loading="lazy"
+                      className="relative w-full h-full object-contain"
                     />
-                    <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(10,22,40,0.3), transparent)' }} />
+                    <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(to top, rgba(2,8,23,0.35), transparent 45%)' }} />
                     {/* Division badge */}
                     <div className="absolute top-4 left-4 px-3 py-1 rounded-full text-white text-xs font-bold" style={{ background: color }}>
                       {division.name}
