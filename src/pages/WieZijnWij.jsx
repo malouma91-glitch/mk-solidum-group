@@ -62,7 +62,7 @@ function WieZijnWij() {
             <div className="relative hidden md:block">
               <div className="rounded-2xl overflow-hidden shadow-xl h-96">
                 <img
-                  src="/images/werk/werk-hoogwerker-bekabeling.jpg"
+                  src="/images/werk/werk-patchkast-open.jpg"
                   alt="MK Solidum Group aan het werk - bekabeling op locatie"
                   className="w-full h-full object-cover"
                 />
@@ -91,7 +91,7 @@ function WieZijnWij() {
             {[
               { v: '2', l: 'Divisies' },
               { v: '2016', l: 'Opgericht' },
-              { v: '6+', l: 'Diensten' },
+              { v: '7+', l: 'Diensten' },
               { v: '24/7', l: 'Bereikbaar' },
             ].map((s) => (
               <div key={s.l}>

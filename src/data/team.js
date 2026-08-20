@@ -50,6 +50,7 @@ export const team = {
     description: 'Betrouwbare medische koeriersdiensten en logistieke distributie door heel Nederland.',
     workforce: 'Naast Mohammed en Karim werkt MK Transport met een vast netwerk van zelfstandige zzp-chauffeurs en warehouse-coördinatoren voor de dagelijkse uitvoering op de weg en de werkvloer. Zij plannen hun eigen dagen en uren, werken met eigen materiaal en worden ingezet op projectbasis in combinatie met een uurtarief.',
     certifications: [
+      'NIWO-vergunning (Eurovergunning beroepsgoederenvervoer)',
       'ADR Certificaat (gevaarlijke stoffen vervoer)',
       'GDP-Gecertificeerd (Good Distribution Practice)',
       'Chauffeursdiploma CCV – code 95',

@@ -133,7 +133,7 @@ function buildResponse(intent, _input, ctx) {
     case 'services':
       return {
         text: pick([
-          `Zeker! MK Solidum Group werkt vanuit **twee divisies**:\n\n🌐 **MK Infra**\n• Internet bekabeling (CAT6A, glasvezel)\n• Patchkasten & switches\n• Netwerk aanleg (Wi-Fi, VLAN, firewalls)\n• Netwerkbeheer (monitoring & onderhoud)\n\n🚚 **MK Transport**\n• Medische koeriersdiensten\n• Logistiek & distributie\n\nWat spreekt u het meeste aan?`,
+          `Zeker! MK Solidum Group werkt vanuit **twee divisies**:\n\n🌐 **MK Infra**\n• Internet bekabeling (CAT6A, glasvezel)\n• Patchkasten & switches\n• Netwerk aanleg (Wi-Fi, VLAN, firewalls)\n• Netwerkbeheer (monitoring & onderhoud)\n\n🚚 **MK Transport**\n• Medische koeriersdiensten\n• Logistiek & distributie\n• Warehouse beheer & coördinatie\n\nWat spreekt u het meeste aan?`,
           `Goede vraag! Wij werken vanuit twee divisies. **MK Infra** voor IT-infrastructuur, netwerken en netwerkbeheer, en **MK Transport** voor medisch vervoer en logistiek.\n\nElke divisie heeft zijn eigen specialisten. Wat is uw situatie? Dan verwijs ik u naar de juiste afdeling.`,
         ]),
         suggestions: ['MK Infra', 'MK Transport', 'Offerte aanvragen'],

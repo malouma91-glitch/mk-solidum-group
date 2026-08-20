@@ -41,6 +41,7 @@ export const divisions = [
         shortDesc: 'Doorlopend beheer en monitoring van uw netwerk na installatie - van reactief onderhoud tot volledig ontzorgd met SLA.',
         longDesc: 'Naast de aanleg van uw netwerk verzorgen wij ook het beheer, zodat u niet zelf hoeft bij te houden of alles blijft werken. Basis Onderhoud is inzetbaar op uurtarief wanneer nodig. Proactief Beheer (vanaf €99 per maand) omvat remote monitoring, maandelijkse health-checks, firmware-updates en reactie binnen 1 werkdag. Volledig Ontzorgd met SLA (op maat, richtprijs vanaf €250 per maand) is bedoeld voor grotere organisaties: 24/7 monitoring, reactietijd binnen 4 uur en kwartaalrapportage. Zo blijft uw netwerk stabiel, veilig en up-to-date, zonder dat u er zelf naar hoeft om te kijken.',
         image: '/images/werk/werk-bekabeling-testen.jpg',
+        imagePosition: 'top',
         slug: 'netwerkbeheer',
       },
     ],
@@ -51,7 +52,7 @@ export const divisions = [
     tagline: 'Betrouwbaar vervoer, altijd onderweg',
     color: '#10B981',
     icon: 'truck',
-    description: 'Gespecialiseerd in medische koeriersdiensten en logistieke distributie. Wij zorgen ervoor dat uw zendingen veilig, snel en op tijd aankomen.',
+    description: 'Gespecialiseerd in medische koeriersdiensten, logistieke distributie en warehouse-coördinatie. Wij zorgen ervoor dat uw zendingen veilig, snel en op tijd aankomen — en dat uw warehouse-operatie soepel draait.',
     services: [
       {
         id: 1,
@@ -68,6 +69,14 @@ export const divisions = [
         longDesc: 'Van same-day koeriersdiensten tot vaste distributieroutes — MK Transport biedt flexibele logistieke oplossingen die meegroeien met uw bedrijf. Wij werken voor e-commerce, groothandels, productiebedrijven en meer. Betrouwbaar, snel en altijd transparant over planning en tarieven.',
         image: '/images/logistiek-distributie.png',
         slug: 'logistiek-distributie',
+      },
+      {
+        id: 9,
+        title: 'Warehouse Beheer & Coördinatie',
+        shortDesc: 'Opdrachtgevers besteden hun volledige warehouse-operatie aan ons uit, of huren onze coördinatoren, planners en sorteerders in om hun eigen team te versterken.',
+        longDesc: 'Naast transport regelt MK Transport voor opdrachtgevers ook de complete warehouse-operatie: planning, logistieke coördinatie, sortering en aansturing van het team op de vloer. Dit kan als volledige uitbesteding — wij nemen de operatie van A tot Z over — of als inhuur van onze coördinatoren, planners en sorteerders naast uw eigen team. Onze operationeel directeur Karim Charradi is specialist in warehouse management en logistieke coördinatie.',
+        image: '/images/werk/werk-warehouse-coordinatie.jpg',
+        slug: 'warehouse-beheer',
       },
     ],
   },

@@ -29,7 +29,7 @@ const faqData = {
     items: [
       { q: 'Wat is GDP-gecertificeerd transport?', a: 'GDP staat voor Good Distribution Practice — een Europese richtlijn voor het transport van farmaceutische en medische producten. Onze chauffeurs en processen voldoen aan deze strenge eisen, zodat uw medische zendingen altijd veilig en conform regelgeving worden vervoerd.' },
       { q: 'Rijden jullie ook spoedritten?', a: 'Ja, wij verzorgen spoedritten door heel Nederland — ook buiten kantooruren. Denk aan urgente labmonsters, spoedingrepen of kritieke leveringen.' },
-      { q: 'Kunnen jullie warehousing en logistiek coördineren?', a: 'Absoluut. Onze co-directeur Karim Charradi is specialist in warehouse management en logistieke coördinatie. Wij leveren coördinatoren, teamleiders en planners voor uw distributiecentrum.' },
+      { q: 'Kunnen jullie warehousing en logistiek coördineren?', a: 'Absoluut. Onze co-directeur Karim Charradi is specialist in warehouse management en logistieke coördinatie. Wij leveren coördinatoren, teamleiders, planners en sorteerders voor uw distributiecentrum — als aanvulling op uw eigen team, of als volledige uitbesteding van de hele operatie.' },
     ],
   },
 }

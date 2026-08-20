@@ -448,10 +448,10 @@ function PartnerSection() {
               Bent u een installatiebedrijf, aannemer, telecombedrijf of facility manager? MK Solidum Group werkt graag als onderaannemer voor uw projecten.
             </p>
             <p className="text-slate-500 leading-relaxed mb-6">
-              Wij leveren gekwalificeerde datamonteurs, netwerk engineers en chauffeurs — deels via ons vaste netwerk van zzp-specialisten. Flexibel, betrouwbaar en met alle benodigde certificeringen.
+              Wij leveren gekwalificeerde datamonteurs, netwerk engineers, chauffeurs en warehouse-coördinatoren — deels via ons vaste netwerk van zzp-specialisten. Flexibel, betrouwbaar en met alle benodigde certificeringen.
             </p>
             <ul className="space-y-3 mb-8">
-              {['Alle certificeringen in huis (VCA**, GDP)', 'Eigen materiaal en gereedschap', 'Schaalbaar — van 1 monteur tot een compleet team', 'Flexibel inzetbaar — per dag, week of project', 'Ervaring met aanbestedingen en grote opdrachtgevers'].map((item) => (
+              {['Alle certificeringen in huis (NIWO, VCA**, GDP)', 'Eigen materiaal en gereedschap', 'Schaalbaar — van 1 monteur tot een compleet team', 'Flexibel inzetbaar — per dag, week of project', 'Ervaring met aanbestedingen en grote opdrachtgevers'].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{ background: 'linear-gradient(135deg,#2563EB,#06B6D4)' }}>
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

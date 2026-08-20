@@ -31,6 +31,7 @@ function DivisionBlock({ division }) {
                       src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover"
+                      style={{ objectPosition: service.imagePosition === 'top' ? 'center top' : 'center' }}
                     />
                     <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(10,22,40,0.3), transparent)' }} />
                     {/* Division badge */}
@@ -72,7 +73,7 @@ function Diensten() {
           </span>
           <h1 className="text-4xl md:text-5xl font-black font-raleway text-white mb-4">Onze diensten</h1>
           <p className="text-slate-300 max-w-xl leading-relaxed">
-            Twee divisies, zes diensten. Van IT-infrastructuur en netwerkbeheer tot medisch transport — MK Solidum Group is uw totaalpartner.
+            Twee divisies, zeven diensten. Van IT-infrastructuur en netwerkbeheer tot medisch transport en warehouse-coördinatie — MK Solidum Group is uw totaalpartner.
           </p>
         </div>
       </section>
