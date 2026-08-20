@@ -4,6 +4,9 @@ import ContactForm from '../components/ContactForm'
 import { divisions } from '../data/services'
 import { HeroGeometric } from '../components/ui/shape-landing-hero'
 import ScrollReveal from '../components/ScrollReveal'
+import { Marquee } from '../components/ui/marquee'
+import { SpotlightCard } from '../components/ui/spotlight-card'
+import { StickyProcess } from '../components/ui/sticky-process'
 
 /* ── Divisie kleuren ── */
 const divColors = { infra: '#2563EB', transport: '#10B981' }
@@ -54,11 +57,16 @@ const reviews = [
 
 /* ── Certificerings partners ── */
 const certLogos = [
-  { name: 'Ubiquiti', color: '#0559C9' },
-  { name: 'Extreme Networks', color: '#6E2C91' },
-  { name: 'FLUKE', color: '#FFB81C' },
+  { name: 'FLUKE Networks', color: '#FFB81C' },
   { name: 'VCA**', color: '#00A651' },
+  { name: 'NIWO', color: '#10B981' },
   { name: 'GDP', color: '#2563EB' },
+  { name: 'ISO 11801', color: '#0EA5E9' },
+  { name: 'TIA/EIA-568', color: '#6366F1' },
+  { name: 'NEN 2768', color: '#8B5CF6' },
+  { name: 'ADR', color: '#F97316' },
+  { name: 'FTTH Glasvezel', color: '#06B6D4' },
+  { name: 'CCV code 95', color: '#14B8A6' },
 ]
 
 /* ── USP features ── */
@@ -114,7 +122,9 @@ function DivisionsSection() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {divisions.map((div) => (
-            <div key={div.id} className={`relative bg-white rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group ${div.id === 'infra' ? 'border-2 shadow-lg' : 'border border-slate-200'}`}
+            <SpotlightCard key={div.id}
+              glow={div.id === 'infra' ? '37,99,235' : '16,185,129'}
+              className={`relative bg-white rounded-2xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group ${div.id === 'infra' ? 'border-2 shadow-lg' : 'border border-slate-200'}`}
               style={div.id === 'infra' ? { borderColor: '#2563EB33', boxShadow: '0 8px 30px rgba(37,99,235,0.12)' } : {}}>
               {div.id === 'infra' && (
                 <div className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full text-white z-10"
@@ -153,7 +163,7 @@ function DivisionsSection() {
                   Meer informatie &rarr;
                 </Link>
               </div>
-            </div>
+            </SpotlightCard>
           ))}
         </div>
       </div>
@@ -167,11 +177,18 @@ function AboutSection() {
       <div className="container-main">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="relative hidden md:block">
-            <div className="rounded-2xl overflow-hidden shadow-xl h-96">
+            <div className="rounded-2xl overflow-hidden shadow-xl h-[30rem] relative bg-slate-900">
+              <img
+                src="/images/werk/werk-patchpaneel-detail.jpg"
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-40"
+              />
               <img
                 src="/images/werk/werk-patchpaneel-detail.jpg"
                 alt="MK Solidum Group - patchpaneel detail"
-                className="w-full h-full object-cover"
+                loading="lazy"
+                className="relative w-full h-full object-contain"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 border border-slate-100">
@@ -228,33 +245,6 @@ function FeaturesSection() {
               </div>
               <h3 className="text-lg font-bold text-white mb-3">{f.title}</h3>
               <p className="text-slate-400 text-sm leading-relaxed">{f.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function ProcessSection() {
-  return (
-    <section className="py-24 bg-white">
-      <div className="container-main">
-        <div className="text-center mb-14">
-          <span className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3 block">Hoe wij werken</span>
-          <h2 className="text-3xl md:text-4xl font-black font-raleway text-slate-900 mb-4">Van idee tot oplevering</h2>
-          <p className="text-slate-500 max-w-lg mx-auto">Een gestructureerd proces dat u volledig ontzorgt en het beste resultaat garandeert.</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
-          <div className="hidden md:block absolute top-10 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-blue-600 to-cyan-400 opacity-30" />
-          {steps.map((step, i) => (
-            <div key={step.num} className="relative text-center">
-              <div className="w-20 h-20 rounded-2xl mx-auto mb-5 flex items-center justify-center text-2xl font-black text-white shadow-blue relative z-10"
-                style={{ background: `linear-gradient(135deg, #2563EB ${i * 15}%, #06B6D4 100%)` }}>
-                {step.num}
-              </div>
-              <h3 className="font-bold text-slate-900 mb-2">{step.title}</h3>
-              <p className="text-slate-500 text-sm leading-relaxed">{step.desc}</p>
             </div>
           ))}
         </div>
@@ -389,17 +379,19 @@ function CertificationsSection() {
     <section className="py-16 bg-slate-50 border-y border-slate-200">
       <div className="container-main">
         <div className="text-center mb-10">
-          <span className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3 block">Certificeringen & Partners</span>
-          <h2 className="text-2xl font-black font-raleway text-slate-900">Wij werken met de beste merken</h2>
+          <span className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3 block">Certificeringen & Normen</span>
+          <h2 className="text-2xl font-black font-raleway text-slate-900">Waar wij mee en volgens werken</h2>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-6">
-          {certLogos.map((logo) => (
-            <div key={logo.name} className="flex items-center gap-2 px-5 py-3 bg-white rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all duration-300">
-              <span className="w-3 h-3 rounded-full shrink-0" style={{ background: logo.color }} />
-              <span className="font-bold text-slate-700 text-sm">{logo.name}</span>
-            </div>
-          ))}
-        </div>
+      </div>
+      <Marquee speed={38} className="py-2">
+        {certLogos.map((logo) => (
+          <div key={logo.name} className="flex items-center gap-2.5 px-5 py-3 bg-white rounded-xl border border-slate-200 shadow-sm hover:border-blue-300 hover:shadow-md transition-all duration-300 whitespace-nowrap">
+            <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ background: logo.color }} />
+            <span className="font-bold text-slate-700 text-sm">{logo.name}</span>
+          </div>
+        ))}
+      </Marquee>
+      <div className="container-main">
       </div>
     </section>
   )
@@ -501,7 +493,12 @@ function Home() {
       <ScrollReveal><ReviewsSection /></ScrollReveal>
       <ScrollReveal><FeaturesSection /></ScrollReveal>
       <ScrollReveal><PartnerSection /></ScrollReveal>
-      <ScrollReveal><ProcessSection /></ScrollReveal>
+      <StickyProcess
+        eyebrow="Hoe wij werken"
+        title="Van idee tot oplevering"
+        intro="Een gestructureerd proces dat u volledig ontzorgt en het beste resultaat garandeert. Scroll mee door onze vier stappen."
+        steps={steps}
+      />
       <ScrollReveal><FreeScanCTA /></ScrollReveal>
       <ScrollReveal><ContactSection /></ScrollReveal>
     </div>

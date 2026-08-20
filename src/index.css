@@ -120,6 +120,24 @@ body {
   transform: translateY(-2px);
 }
 
+/* Oneindige band (marquee) — certificeringen & expertises */
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
+/* Respecteer de systeeminstelling voor minder beweging */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Grid dot pattern (hero background texture) */
 .dot-pattern {
   background-image: radial-gradient(rgba(255,255,255,0.07) 1px, transparent 1px);
