@@ -7,15 +7,12 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Lazy loading images */
-img[loading="lazy"] {
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-img[loading="lazy"].loaded,
-img[loading="lazy"][complete] {
-  opacity: 1;
-}
+/* Lazy loading images
+   LET OP: hier stond eerder een regel die elke loading="lazy" afbeelding op
+   opacity:0 zette, in afwachting van een .loaded class die nergens in de code
+   werd toegevoegd (en [complete] is een DOM-property, geen HTML-attribuut, dus
+   die selector matchte nooit). Gevolg: alle lazy-loaded foto's bleven onzichtbaar.
+   De browser regelt het inladen zelf prima — geen extra CSS nodig. */
 
 * {
   box-sizing: border-box;
