@@ -12,8 +12,8 @@ const navLinks = [
 ]
 
 const divisies = [
-  { label: 'MK Transport', color: '#10B981' },
   { label: 'MK Infra', color: '#2563EB' },
+  { label: 'MK Transport', color: '#10B981' },
 ]
 
 function Footer() {
@@ -29,7 +29,7 @@ function Footer() {
               <span className="text-sm font-semibold text-slate-500 ml-1">Group</span>
             </Link>
             <p className="text-sm leading-relaxed text-slate-500 mb-6">
-              Twee divisies, één partner. Transport en IT-infrastructuur — MK Solidum Group ontzorgt u volledig.
+              Twee divisies, één partner. IT-infrastructuur en Transport — MK Solidum Group ontzorgt u volledig.
             </p>
             <div className="flex items-center gap-3">
               {['linkedin', 'facebook'].map((s) => (

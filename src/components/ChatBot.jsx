@@ -133,10 +133,10 @@ function buildResponse(intent, _input, ctx) {
     case 'services':
       return {
         text: pick([
-          `Zeker! MK Solidum Group werkt vanuit **twee divisies**:\n\n🚚 **MK Transport**\n• Medische koeriersdiensten\n• Logistiek & distributie\n\n🌐 **MK Infra**\n• Internet bekabeling (CAT6A, glasvezel)\n• Patchkasten & switches\n• Netwerk aanleg (Wi-Fi, VLAN, firewalls)\n• Netwerkbeheer (monitoring & onderhoud)\n\nWat spreekt u het meeste aan?`,
-          `Goede vraag! Wij werken vanuit twee divisies. **MK Transport** voor medisch vervoer en logistiek, en **MK Infra** voor IT-infrastructuur, netwerken en netwerkbeheer.\n\nElke divisie heeft zijn eigen specialisten. Wat is uw situatie? Dan verwijs ik u naar de juiste afdeling.`,
+          `Zeker! MK Solidum Group werkt vanuit **twee divisies**:\n\n🌐 **MK Infra**\n• Internet bekabeling (CAT6A, glasvezel)\n• Patchkasten & switches\n• Netwerk aanleg (Wi-Fi, VLAN, firewalls)\n• Netwerkbeheer (monitoring & onderhoud)\n\n🚚 **MK Transport**\n• Medische koeriersdiensten\n• Logistiek & distributie\n\nWat spreekt u het meeste aan?`,
+          `Goede vraag! Wij werken vanuit twee divisies. **MK Infra** voor IT-infrastructuur, netwerken en netwerkbeheer, en **MK Transport** voor medisch vervoer en logistiek.\n\nElke divisie heeft zijn eigen specialisten. Wat is uw situatie? Dan verwijs ik u naar de juiste afdeling.`,
         ]),
-        suggestions: ['MK Transport', 'MK Infra', 'Offerte aanvragen'],
+        suggestions: ['MK Infra', 'MK Transport', 'Offerte aanvragen'],
       }
 
     case 'price':
@@ -188,7 +188,7 @@ function buildResponse(intent, _input, ctx) {
     case 'camera':
       return {
         text: `Beveiligingsdiensten zoals camerasystemen bieden wij op dit moment niet meer aan als aparte divisie — wij richten ons volledig op **MK Transport** (medisch vervoer & logistiek) en **MK Infra** (netwerkaanleg, bekabeling & netwerkbeheer).\n\nKan ik u daar verder mee helpen?`,
-        suggestions: ['MK Transport', 'MK Infra', 'Offerte aanvragen'],
+        suggestions: ['MK Infra', 'MK Transport', 'Offerte aanvragen'],
       }
 
     case 'cabling':
@@ -356,8 +356,8 @@ function buildResponse(intent, _input, ctx) {
     case 'company':
       return {
         text: pick([
-          `MK Solidum Group B.V. is opgericht op **26 september 2016** — oorspronkelijk als Kali Transport V.O.F. en sindsdien uitgegroeid tot een volwaardige multi-divisie groep.\n\nWat wij doen:\n🚚 **MK Transport** — medisch transport & logistiek\n🌐 **MK Infra** — IT-infrastructuur & netwerken\n\nKantoor: **Bilthoven (Utrecht)** — maar wij werken door heel Nederland. Eén partner voor twee vakgebieden — dat is onze kracht.`,
-          `MK Solidum Group bestaat al since 2016 en heeft zich ontwikkeld van een transportbedrijf naar een volledige dienstverlener op het gebied van transport en IT-infrastructuur.\n\nWij geloven in één aanspreekpunt voor meerdere behoeften. Geen losse leveranciers, geen miscommunicatie — gewoon één partij die alles regelt.\n\nKvK-nummer: **66920280** | Gevestigd in **Bilthoven**\n\nWat wilt u van ons weten?`,
+          `MK Solidum Group B.V. is opgericht op **26 september 2016** — oorspronkelijk als Kali Transport V.O.F. en sindsdien uitgegroeid tot een volwaardige multi-divisie groep.\n\nWat wij doen:\n🌐 **MK Infra** — IT-infrastructuur & netwerken\n🚚 **MK Transport** — medisch transport & logistiek\n\nKantoor: **Bilthoven (Utrecht)** — maar wij werken door heel Nederland. Eén partner voor twee vakgebieden — dat is onze kracht.`,
+          `MK Solidum Group bestaat al since 2016 en heeft zich ontwikkeld van een transportbedrijf naar een volledige dienstverlener op het gebied van IT-infrastructuur en transport.\n\nWij geloven in één aanspreekpunt voor meerdere behoeften. Geen losse leveranciers, geen miscommunicatie — gewoon één partij die alles regelt.\n\nKvK-nummer: **66920280** | Gevestigd in **Bilthoven**\n\nWat wilt u van ons weten?`,
         ]),
         suggestions: ['Onze divisies', 'Ons team', 'Offerte aanvragen', 'Contact opnemen'],
       }
@@ -399,7 +399,7 @@ function buildResponse(intent, _input, ctx) {
     case 'access_control':
       return {
         text: `Alarmsystemen en toegangscontrole bieden wij op dit moment niet meer aan als aparte divisie — wij richten ons volledig op **MK Transport** (medisch vervoer & logistiek) en **MK Infra** (netwerkaanleg, bekabeling & netwerkbeheer).\n\nKan ik u daar verder mee helpen?`,
-        suggestions: ['MK Transport', 'MK Infra', 'Offerte aanvragen'],
+        suggestions: ['MK Infra', 'MK Transport', 'Offerte aanvragen'],
       }
 
     case 'emergency':
@@ -498,7 +498,7 @@ export default function ChatBot() {
     {
       id: 1,
       from: 'bot',
-      text: `Hallo! 👋 U spreekt met **Daan van den Berg**, adviseur bij MK Solidum Group. Fijn dat u contact opneemt!\n\nWij helpen u met **transport** en **IT-infrastructuur**. Waarmee kan ik u vandaag helpen?`,
+      text: `Hallo! 👋 U spreekt met **Daan van den Berg**, adviseur bij MK Solidum Group. Fijn dat u contact opneemt!\n\nWij helpen u met **IT-infrastructuur** en **transport**. Waarmee kan ik u vandaag helpen?`,
       suggestions: ['Welke divisies hebben jullie?', 'Ik wil een offerte', 'Wat zijn de kosten?'],
       time: new Date(),
     },

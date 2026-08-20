@@ -291,7 +291,7 @@ function Kennisbank() {
             </span>
           </h1>
           <p className="text-slate-400 max-w-lg mx-auto leading-relaxed">
-            Artikelen, tips en inzichten over transport en IT-infrastructuur. Geschreven door onze specialisten.
+            Artikelen, tips en inzichten over IT-infrastructuur en transport. Geschreven door onze specialisten.
           </p>
           {/* Stats */}
           <div className="flex justify-center gap-8 mt-10">

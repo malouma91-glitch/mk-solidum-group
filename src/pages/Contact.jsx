@@ -53,7 +53,7 @@ function Contact() {
                 Hoe kunt u ons bereiken?
               </h2>
               <p className="text-slate-500 leading-relaxed mb-8">
-                MK Solidum Group bedient u vanuit twee divisies: MK Transport en MK Infra. Of het nu gaat om medisch vervoer, netwerk aanleg of netwerkbeheer — wij helpen u graag.
+                MK Solidum Group bedient u vanuit twee divisies: MK Infra en MK Transport. Of het nu gaat om netwerk aanleg, netwerkbeheer of medisch vervoer — wij helpen u graag.
               </p>
 
               <div className="space-y-4 mb-10">

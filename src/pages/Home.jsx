@@ -6,7 +6,7 @@ import { HeroGeometric } from '../components/ui/shape-landing-hero'
 import ScrollReveal from '../components/ScrollReveal'
 
 /* ── Divisie kleuren ── */
-const divColors = { transport: '#10B981', infra: '#2563EB' }
+const divColors = { infra: '#2563EB', transport: '#10B981' }
 
 /* ── Animated counter hook ── */
 function useCountUp(target, duration = 2000) {
@@ -47,9 +47,9 @@ const stats = [
 
 /* ── Reviews ── */
 const reviews = [
+  { name: 'M. de Boer', company: 'Kantoor Plus Utrecht', stars: 4, text: 'Goede service, eerlijke prijzen. Wi-Fi werkt eindelijk overal in ons kantoor. Het team is vriendelijk en deskundig.' },
   { name: 'J. van der Meer', company: 'VH Logistics B.V.', stars: 5, text: 'MK Solidum Group heeft ons magazijn voorzien van een compleet netwerk. Professioneel, netjes en precies op tijd opgeleverd. Topwerk!' },
   { name: 'R. Kuiper', company: 'MediFast Apotheek', stars: 5, text: 'Sinds wij samenwerken met MK Transport hoeven wij ons geen zorgen meer te maken over onze medische leveringen. Betrouwbaar en altijd bereikbaar.' },
-  { name: 'M. de Boer', company: 'Kantoor Plus Utrecht', stars: 4, text: 'Goede service, eerlijke prijzen. Wi-Fi werkt eindelijk overal in ons kantoor. Het team is vriendelijk en deskundig.' },
 ]
 
 /* ── Certificerings partners ── */
@@ -65,7 +65,7 @@ const certLogos = [
 const features = [
   {
     title: 'Twee Divisies, Één Partner',
-    desc: 'Transport en IT-infrastructuur — alles onder één dak. Geen gedoe met meerdere leveranciers.',
+    desc: 'IT-infrastructuur en Transport — alles onder één dak. Geen gedoe met meerdere leveranciers.',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -114,7 +114,14 @@ function DivisionsSection() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {divisions.map((div) => (
-            <div key={div.id} className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+            <div key={div.id} className={`relative bg-white rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group ${div.id === 'infra' ? 'border-2 shadow-lg' : 'border border-slate-200'}`}
+              style={div.id === 'infra' ? { borderColor: '#2563EB33', boxShadow: '0 8px 30px rgba(37,99,235,0.12)' } : {}}>
+              {div.id === 'infra' && (
+                <div className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full text-white z-10"
+                  style={{ background: 'linear-gradient(135deg,#2563EB,#06B6D4)' }}>
+                  Kernexpertise
+                </div>
+              )}
               {/* Color bar top */}
               <div className="h-1.5" style={{ background: divColors[div.id] }} />
               <div className="p-8">
@@ -176,10 +183,10 @@ function AboutSection() {
             <span className="text-blue-600 text-sm font-bold uppercase tracking-widest mb-3 block">Over ons</span>
             <h2 className="text-3xl md:text-4xl font-black font-raleway text-slate-900 mb-6 leading-tight">Wie is MK Solidum Group?</h2>
             <p className="text-slate-500 leading-relaxed mb-4">
-              MK Solidum Group B.V. is een dynamische onderneming gevestigd in Bilthoven. Wij zijn gespecialiseerd in twee kerngebieden: medisch transport en IT-infrastructuur.
+              MK Solidum Group B.V. is een dynamische onderneming gevestigd in Bilthoven. Wij zijn gespecialiseerd in twee kerngebieden: IT-infrastructuur en medisch transport.
             </p>
             <p className="text-slate-500 leading-relaxed mb-6">
-              Met onze twee divisies — MK Transport en MK Infra — bieden wij een totaaloplossing. Uw project is ons project.
+              Met onze twee divisies — MK Infra en MK Transport — bieden wij een totaaloplossing. Uw project is ons project.
             </p>
             <ul className="space-y-3 mb-8">
               {['Gecertificeerde vakmensen', 'Twee divisies onder één dak', 'Geen verborgen kosten', 'Doorlopende service en onderhoud'].map((item) => (
@@ -267,7 +274,7 @@ function ContactSection() {
               Neem vrijblijvend<br />contact op
             </h2>
             <p className="text-slate-500 leading-relaxed mb-8">
-              MK Solidum Group levert passende en hoogwaardige maatwerkoplossingen. Of het nu gaat om transport, IT-infrastructuur of beveiliging — wij denken graag met u mee.
+              MK Solidum Group levert passende en hoogwaardige maatwerkoplossingen. Of het nu gaat om IT-infrastructuur, netwerkbeheer of transport — wij denken graag met u mee.
             </p>
             <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-card mb-8">
               <div className="text-4xl font-black text-blue-600 leading-none mb-2">&ldquo;</div>
@@ -467,7 +474,7 @@ function PartnerSection() {
             </div>
             <div className="absolute -bottom-4 -left-4 bg-blue-600 rounded-2xl shadow-xl p-5 text-white">
               <div className="text-2xl font-black mb-0.5">2 Divisies</div>
-              <div className="text-blue-200 text-sm">Transport · Infra</div>
+              <div className="text-blue-200 text-sm">Infra · Transport</div>
             </div>
           </div>
         </div>
@@ -480,10 +487,10 @@ function Home() {
   return (
     <div>
       <HeroGeometric
-        badge="Transport · Infra"
+        badge="Infra · Transport"
         title1="MK Solidum"
         title2="Group"
-        description="Twee divisies, één partner. Van medisch transport en IT-infrastructuur tot netwerkbeheer — MK Solidum Group ontzorgt u volledig."
+        description="Twee divisies, één partner. Van IT-infrastructuur en netwerkbeheer tot medisch transport — MK Solidum Group ontzorgt u volledig."
         ctaPrimary={{ label: 'Gratis adviesgesprek \u2192', href: '/contact' }}
         ctaSecondary={{ label: 'Onze diensten', href: '/diensten' }}
       />

@@ -6,20 +6,11 @@ const faqData = {
     label: 'Algemeen',
     color: '#2563EB',
     items: [
-      { q: 'Wat doet MK Solidum Group?', a: 'MK Solidum Group is actief vanuit twee divisies: MK Transport (medisch vervoer & logistiek) en MK Infra (netwerken, bekabeling, glasvezel & netwerkbeheer). Wij bieden een totaaloplossing voor bedrijven die op zoek zijn naar een betrouwbare partner.' },
+      { q: 'Wat doet MK Solidum Group?', a: 'MK Solidum Group is actief vanuit twee divisies: MK Infra (netwerken, bekabeling, glasvezel & netwerkbeheer) en MK Transport (medisch vervoer & logistiek). Wij bieden een totaaloplossing voor bedrijven die op zoek zijn naar een betrouwbare partner.' },
       { q: 'Waar zijn jullie gevestigd?', a: 'Ons kantoor is gevestigd in Bilthoven (gemeente De Bilt), nabij Utrecht. Wij werken door heel Nederland, met focus op de Randstad en Brabant.' },
       { q: 'Hoeveel kost een project?', a: 'Elk project is maatwerk — daarom geven wij altijd een vrijblijvende offerte na een inventarisatie. Kleine installaties starten vanaf enkele honderden euro\'s, grotere projecten lopen op tot tienduizenden euro\'s. Wij zijn altijd transparant over onze tarieven.' },
       { q: 'Werken jullie ook als onderaannemer?', a: 'Ja! Wij werken regelmatig als onderaannemer voor aannemers, installatiebureau\'s, telecombedrijven en facility managers. Wij leveren gekwalificeerde datamonteurs en chauffeurs met alle certificeringen.' },
       { q: 'Hoe snel kunnen jullie starten?', a: 'Voor kleine projecten kunnen wij vaak binnen een week starten. Grotere projecten plannen wij zorgvuldig in overleg. Bij storingen en spoed reageren wij dezelfde dag.' },
-    ],
-  },
-  transport: {
-    label: 'MK Transport',
-    color: '#10B981',
-    items: [
-      { q: 'Wat is GDP-gecertificeerd transport?', a: 'GDP staat voor Good Distribution Practice — een Europese richtlijn voor het transport van farmaceutische en medische producten. Onze chauffeurs en processen voldoen aan deze strenge eisen, zodat uw medische zendingen altijd veilig en conform regelgeving worden vervoerd.' },
-      { q: 'Rijden jullie ook spoedritten?', a: 'Ja, wij verzorgen spoedritten door heel Nederland — ook buiten kantooruren. Denk aan urgente labmonsters, spoedingrepen of kritieke leveringen.' },
-      { q: 'Kunnen jullie warehousing en logistiek coördineren?', a: 'Absoluut. Onze co-directeur Karim Charradi is specialist in warehouse management en logistieke coördinatie. Wij leveren coördinatoren, teamleiders en planners voor uw distributiecentrum.' },
     ],
   },
   infra: {
@@ -30,6 +21,15 @@ const faqData = {
       { q: 'Wat is een Wi-Fi site survey?', a: 'Een site survey is een professionele meting van uw ruimte om te bepalen waar access points optimaal geplaatst moeten worden. Wij meten signaalsterkte, interferentie en obstakels — zo krijgt u in één keer een dekkend Wi-Fi-netwerk zonder dode zones.' },
       { q: 'Met welke merken werken jullie?', a: 'Wij zijn niet gebonden aan één vaste leverancier. Voor kabels, patchkasten en access points werken wij met verschillende toonaangevende merken en kiezen wij per project wat het beste past bij uw budget en eisen. Voor certificering van bekabeling gebruiken wij FLUKE Networks meetapparatuur.' },
       { q: 'Bieden jullie ook netwerkbeheer aan?', a: 'Ja, wij bieden proactief netwerkbeheer: 24/7 monitoring, remote support, updates & patches en maandelijkse rapportages. Ideaal als u geen eigen IT-afdeling heeft.' },
+    ],
+  },
+  transport: {
+    label: 'MK Transport',
+    color: '#10B981',
+    items: [
+      { q: 'Wat is GDP-gecertificeerd transport?', a: 'GDP staat voor Good Distribution Practice — een Europese richtlijn voor het transport van farmaceutische en medische producten. Onze chauffeurs en processen voldoen aan deze strenge eisen, zodat uw medische zendingen altijd veilig en conform regelgeving worden vervoerd.' },
+      { q: 'Rijden jullie ook spoedritten?', a: 'Ja, wij verzorgen spoedritten door heel Nederland — ook buiten kantooruren. Denk aan urgente labmonsters, spoedingrepen of kritieke leveringen.' },
+      { q: 'Kunnen jullie warehousing en logistiek coördineren?', a: 'Absoluut. Onze co-directeur Karim Charradi is specialist in warehouse management en logistieke coördinatie. Wij leveren coördinatoren, teamleiders en planners voor uw distributiecentrum.' },
     ],
   },
 }
