@@ -162,8 +162,8 @@ function AboutSection() {
           <div className="relative hidden md:block">
             <div className="rounded-2xl overflow-hidden shadow-xl h-96">
               <img
-                src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=800&q=80"
-                alt="MK Solidum Group team"
+                src="/images/werk/werk-patchpaneel-detail.jpg"
+                alt="MK Solidum Group - patchpaneel detail"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -460,8 +460,8 @@ function PartnerSection() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80"
-                alt="MK Solidum Group samenwerking"
+                src="/images/werk/werk-serverruimte.jpg"
+                alt="MK Solidum Group samenwerking - serverruimte oplevering"
                 className="w-full h-80 object-cover"
               />
             </div>

@@ -42,7 +42,7 @@ export const divisions = [
         title: 'Internet Bekabeling',
         shortDesc: 'Professionele gestructureerde bekabeling (CAT6A, CAT7, glasvezel) voor kantoor, bedrijfspand of datacenter.',
         longDesc: 'Gestructureerde bekabeling is het fundament van elke IT-infrastructuur. MK Infra levert en installeert copper en glasvezel bekabeling conform de nieuwste normen (TIA-568, ISO 11801). Van een klein kantoor tot een groot datacenter — wij zorgen voor een stabiele, toekomstbestendige bekabelingsinfrastructuur met gecertificeerde oplevering.',
-        image: '/images/internet-bekabeling.png',
+        image: '/images/werk/werk-patchkast-open.jpg',
         slug: 'internet-bekabeling',
       },
       {
@@ -50,7 +50,7 @@ export const divisions = [
         title: 'Patchkasten & Switches',
         shortDesc: 'Installatie en inrichting van patchkasten, switches en serverruimtes. Alles netjes gelabeld en gedocumenteerd.',
         longDesc: 'Een goed ingerichte patchkast is het hart van uw netwerk. MK Infra installeert en configureert patchkasten, managed switches en serverruimtes volgens best practices. Alles wordt netjes gelabeld, gedocumenteerd en opgeleverd met een testrapportage. Wij zijn niet gebonden aan één leverancier en kiezen per project de beste merken voor uw budget en eisen.',
-        image: '/images/patchkasten-switches.png',
+        image: '/images/werk/werk-serverruimte.jpg',
         slug: 'patchkasten-switches',
       },
       {
@@ -58,7 +58,7 @@ export const divisions = [
         title: 'Netwerk Aanleg',
         shortDesc: 'Complete netwerkoplossingen van ontwerp tot installatie. Wi-Fi, VLAN, firewalls en straalverbindingen.',
         longDesc: 'Een goed functionerend netwerk is essentieel voor uw bedrijfsvoering. MK Infra biedt complete netwerkoplossingen: van ontwerp en VLAN-segmentatie tot Wi-Fi installatie, firewalls en straalverbindingen. Wij werken met verschillende toonaangevende merken en kiezen per project de apparatuur die het beste past bij uw situatie, voor enterprise-grade betrouwbaarheid.',
-        image: '/images/netwerk-aanleg.png',
+        image: '/images/werk/werk-ap-installatie.jpg',
         slug: 'netwerk-aanleg',
       },
       {
@@ -66,7 +66,7 @@ export const divisions = [
         title: 'Netwerkbeheer',
         shortDesc: 'Doorlopend beheer en monitoring van uw netwerk na installatie - van reactief onderhoud tot volledig ontzorgd met SLA.',
         longDesc: 'Naast de aanleg van uw netwerk verzorgen wij ook het beheer, zodat u niet zelf hoeft bij te houden of alles blijft werken. Basis Onderhoud is inzetbaar op uurtarief wanneer nodig. Proactief Beheer (vanaf €99 per maand) omvat remote monitoring, maandelijkse health-checks, firmware-updates en reactie binnen 1 werkdag. Volledig Ontzorgd met SLA (op maat, richtprijs vanaf €250 per maand) is bedoeld voor grotere organisaties: 24/7 monitoring, reactietijd binnen 4 uur en kwartaalrapportage. Zo blijft uw netwerk stabiel, veilig en up-to-date, zonder dat u er zelf naar hoeft om te kijken.',
-        image: '/images/netwerk-aanleg.png',
+        image: '/images/werk/werk-bekabeling-testen.jpg',
         slug: 'netwerkbeheer',
       },
     ],

@@ -19,7 +19,7 @@ const articles = [
       { type: 'h2', text: 'Wanneer kiest u voor Cat6A?' },
       { type: 'p', text: 'Wij adviseren Cat6A bij nieuwbouwprojecten, datacenters, zorginstellingen en bedrijven die toekomstbestendig willen bouwen. De meerkosten zijn beperkt (10-15%) maar de extra capaciteit betaalt zich terug zodra u meer bandbreedte nodig heeft.' },
       { type: 'h2', text: 'Onze aanbeveling' },
-      { type: 'p', text: 'Bij MK Solidum Group installeren wij standaard Cat6A. De reden is simpel: de bekabeling in uw pand gaat 25+ jaar mee, maar uw bandbreedtebehoefte groeit elk jaar. Met Cat6A bent u voorbereid op de toekomst — zonder opnieuw te hoeven investeren in bekabeling.' },
+      { type: 'p', text: 'Bij MK Solidum Group installeren wij standaard Cat6A. De reden is simpel: de bekabeling in uw pand gaat 25+ jaar mee, maar uw bandbreedtebehoefte groeit elk jaar. Met Cat6A bent u voorbereid op de toekomst — zonder opnieuw te hoeven investeren in bekabeling. Elke verbinding meten wij na oplevering door met gecertificeerde Fluke Networks testapparatuur (ISO 11801), zodat u zwart op wit heeft dat elke kabel de gemeten snelheid ook daadwerkelijk haalt.' },
     ],
   },
   {
@@ -45,7 +45,7 @@ const articles = [
     category: 'Infra',
     color: '#2563EB',
     readTime: '4 min',
-    image: '/images/kennisbank/wifi-survey.jpg',
+    image: '/images/werk/werk-ap-installatie.jpg',
     intro: 'Een Wi-Fi site survey is het verschil tussen een netwerk dat "wel werkt" en een netwerk dat overal perfect werkt.',
     content: [
       { type: 'h2', text: 'Wat is een site survey?' },
@@ -96,6 +96,8 @@ const articles = [
       { type: 'p', text: 'Klein kantoor (10-20 werkplekken): €2.500 - €6.000. Middelgroot kantoor (20-50 werkplekken): €6.000 - €15.000. Groot kantoor/pand (50+ werkplekken): €15.000 - €40.000+. Dit zijn richtprijzen inclusief materiaal, arbeid en certificering. De exacte prijs hangt af van uw specifieke situatie.' },
       { type: 'h2', text: 'Wat zit er inbegrepen?' },
       { type: 'p', text: 'Bij MK Solidum Group is onze offerte altijd compleet: materiaal, arbeid, patchkasten, switches, labeling, certificering en documentatie. Geen verborgen kosten, geen verrassingen achteraf. Wij geven altijd vooraf een gedetailleerde specificatie zodat u precies weet waar u aan toe bent.' },
+      { type: 'h2', text: 'En daarna?' },
+      { type: 'p', text: 'Na oplevering hoeft u het niet los te laten. Via onze Netwerkbeheer-dienst nemen wij het onderhoud over: van losse uurtjes tot volledig proactief beheer met monitoring en een vaste reactietijd, zodat storingen worden opgelost voordat u ze merkt.' },
     ],
   },
 ]

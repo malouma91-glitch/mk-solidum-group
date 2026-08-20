@@ -62,8 +62,8 @@ function WieZijnWij() {
             <div className="relative hidden md:block">
               <div className="rounded-2xl overflow-hidden shadow-xl h-96">
                 <img
-                  src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=800&q=80"
-                  alt="MK Solidum Group team aan het werk"
+                  src="/images/werk/werk-hoogwerker-bekabeling.jpg"
+                  alt="MK Solidum Group aan het werk - bekabeling op locatie"
                   className="w-full h-full object-cover"
                 />
               </div>
