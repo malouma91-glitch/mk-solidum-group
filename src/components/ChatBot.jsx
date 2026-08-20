@@ -248,8 +248,8 @@ function buildResponse(intent, _input, ctx) {
     case 'sector':
       return {
         text: pick([
-          `Wij werken in bijna alle sectoren — en dat merk je aan de aanpak. Elke sector heeft zijn eigen eisen:\n\n• **Zorg** — hoge beschikbaarheid, redundantie, medische veiligheid\n• **Onderwijs** — robuuste Wi-Fi voor veel apparaten, contentfiltering\n• **Horeca** — gastenwifi, aparte netwerken, beveiliging\n• **Industrie/Magazijn** — industriële Wi-Fi, barcodedragers, harsh environment\n• **Retail** — POS-systemen, camerabeveiliging, toegangscontrole\n• **MKB/Kantoor** — compleet en beheersbaar netwerk\n\nIn welke sector zit u?`,
-          `Goede vraag! Wij bedienen de zorg, onderwijs, retail, horeca, industrie en overheid — elk met hun eigen specifieke eisen.\n\nBijvoorbeeld: een distributiecentrum heeft andere Wi-Fi-eisen dan een ziekenhuis. En een hotel heeft andere beveiligingswensen dan een basisschool.\n\nWat is uw sector? Dan vertel ik u wat wij daar al voor anderen hebben gedaan.`,
+          `Wij werken in bijna alle sectoren — en dat merk je aan de aanpak. Elke sector heeft zijn eigen eisen:\n\n• **Zorg** — hoge beschikbaarheid, redundantie, medische veiligheid\n• **Onderwijs** — robuuste Wi-Fi voor veel apparaten, contentfiltering\n• **Horeca** — gastenwifi, aparte netwerken\n• **Industrie/Magazijn** — industriële Wi-Fi, barcodedragers, harsh environment\n• **Retail** — POS-systemen, netwerkdekking op de vloer\n• **MKB/Kantoor** — compleet en beheersbaar netwerk\n\nIn welke sector zit u?`,
+          `Goede vraag! Wij bedienen de zorg, onderwijs, retail, horeca, industrie en overheid — elk met hun eigen specifieke eisen.\n\nBijvoorbeeld: een distributiecentrum heeft andere Wi-Fi-eisen dan een ziekenhuis. En een hotel heeft andere netwerkeisen dan een basisschool.\n\nWat is uw sector? Dan vertel ik u wat wij daar al voor anderen hebben gedaan.`,
         ]),
         suggestions: ['Zorg / ziekenhuis', 'Onderwijs', 'Industrie / magazijn', 'Kantoor / MKB'],
       }
@@ -302,7 +302,7 @@ function buildResponse(intent, _input, ctx) {
     case 'references':
       return {
         text: pick([
-          `Wij hebben mooie referenties door heel Nederland! Vanwege privacy kunnen wij niet altijd namen noemen, maar wij hebben projecten gedaan voor:\n\n• Logistieke bedrijven en distributiecentra (Wi-Fi + bekabeling)\n• Zorginstellingen (netwerk + camerabeveiliging)\n• Onderwijsinstellingen (Wi-Fi voor 500+ gebruikers)\n• Gemeentes en overheidsinstanties (glasvezel + netwerk)\n• MKB-kantoren (complete IT-infrastructuur)\n\nWilt u referenties zien die passen bij uw sector? Dan zoek ik die voor u op.`,
+          `Wij hebben mooie referenties door heel Nederland! Vanwege privacy kunnen wij niet altijd namen noemen, maar wij hebben projecten gedaan voor:\n\n• Logistieke bedrijven en distributiecentra (Wi-Fi + bekabeling)\n• Zorginstellingen (netwerkinfrastructuur)\n• Onderwijsinstellingen (Wi-Fi voor 500+ gebruikers)\n• Gemeentes en overheidsinstanties (glasvezel + netwerk)\n• MKB-kantoren (complete IT-infrastructuur)\n\nWilt u referenties zien die passen bij uw sector? Dan zoek ik die voor u op.`,
           `Goede vraag! Wij hebben al veel mooie projecten afgerond. Op onze website staat een aantal referenties, maar er zijn er ook die wij op verzoek kunnen delen.\n\nWat is uw sector? Dan kan ik u een vergelijkbaar project beschrijven — inclusief wat de uitdaging was en hoe wij dat hebben opgelost.`,
         ]),
         suggestions: ['Referentie in mijn sector', 'Naar de referentiepagina', 'Offerte aanvragen'],
